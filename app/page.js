@@ -93,7 +93,7 @@ export default function Home() {
           <p className="text-[#D4AF37] text-xl md:text-2xl mb-8 tracking-widest font-light">
             Professional Auto Detailing In South Denver Done At Your Convenience
           </p>
-          <Button size="lg" className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-8 py-6 text-lg">
+          <Button size="lg" className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-8 py-6 text-lg">
             <a href="tel:+17209712020">GET IN TOUCH</a>
           </Button>
         </div>
@@ -123,7 +123,7 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-white tracking-wider">{service.title}</h3>
                   <p className="text-gray-400 mb-6 leading-relaxed">{service.description}</p>
-                  <Button asChild variant="outline" className="w-full border-[#00BCD4] text-[#00BCD4] hover:bg-[#00BCD4] hover:text-white">
+                  <Button asChild variant="outline" className="w-full border-[#1B9B8A] text-[#1B9B8A] hover:bg-[#1B9B8A] hover:text-white">
                     <Link href={service.link}>LEARN MORE</Link>
                   </Button>
                 </CardContent>
@@ -154,7 +154,7 @@ export default function Home() {
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="text-[#00BCD4] flex-shrink-0 mt-1 w-6 h-6" />
+                    <CheckCircle className="text-[#1B9B8A] flex-shrink-0 mt-1 w-6 h-6" />
                     <p className="text-gray-300">{benefit}</p>
                   </div>
                 ))}
@@ -225,7 +225,7 @@ export default function Home() {
           <p className="text-gray-400 text-xl mb-8 max-w-2xl mx-auto">
             Let Spruce Detailing bring professional automotive care right to your driveway in South Denver Metro.
           </p>
-          <Button size="lg" className="bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-10 py-6 text-lg">
+          <Button size="lg" className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-10 py-6 text-lg">
             <a href="tel:+17209712020">GET YOUR FREE QUOTE NOW</a>
           </Button>
         </div>
