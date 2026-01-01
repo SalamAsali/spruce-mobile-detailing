@@ -112,7 +112,7 @@ export default function BeforeAfter() {
             <div className="absolute top-6 left-6 bg-red-600 text-white px-6 py-3 rounded-lg font-bold z-20 tracking-wider text-sm">
               BEFORE
             </div>
-            <div className="absolute top-6 right-6 bg-[#00BCD4] text-white px-6 py-3 rounded-lg font-bold z-20 tracking-wider text-sm">
+            <div className="absolute top-6 right-6 bg-[#1B9B8A] text-white px-6 py-3 rounded-lg font-bold z-20 tracking-wider text-sm">
               AFTER
             </div>
 
