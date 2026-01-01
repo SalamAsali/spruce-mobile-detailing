@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,62 +12,68 @@ export default function Footer() {
     { name: 'Boat Detailing', href: '/boat-detailing' },
   ]
 
-  const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
+  const serviceAreas = [
+    'Castle Rock',
+    'Parker',
+    'Highlands Ranch',
+    'Centennial',
+    'Littleton',
+    'Greenwood Village',
+    'Lone Tree',
+    'South Aurora',
+    'Lakewood',
+    'Englewood',
+    'Cherry Creek',
+    'Washington Park'
   ]
 
   return (
-    <footer className="bg-emerald-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-black border-t border-gray-800 text-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-emerald-900 font-bold text-xl">S</span>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-lg flex items-center justify-center">
+                <span className="text-black font-bold text-2xl">S</span>
               </div>
-              <span className="font-bold text-lg">Spruce Mobile Detailing</span>
+              <div>
+                <div className="text-white font-bold text-lg tracking-wider">SPRUCE</div>
+                <div className="text-[#00BCD4] text-xs tracking-widest">MOBILE DETAILING</div>
+              </div>
             </div>
-            <p className="text-emerald-100 mb-4">
-              Professional mobile detailing services in Mississauga and the Greater Toronto Area.
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Premium mobile detailing services in South Denver Metro. We bring professional auto care to your location.
             </p>
             <div className="flex gap-4">
               <a 
                 href="https://www.instagram.com/sprucemobiledetailing/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-emerald-800 hover:bg-emerald-700 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="w-10 h-10 bg-emerald-800 hover:bg-emerald-700 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-gray-800 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 bg-emerald-800 hover:bg-emerald-700 rounded-full flex items-center justify-center transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Our Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-bold text-lg mb-6 tracking-wider">SERVICES</h3>
+            <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.name}>
                   <Link 
                     href={service.href}
-                    className="text-emerald-100 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-[#D4AF37] transition-colors"
                   >
                     {service.name}
                   </Link>
@@ -76,18 +82,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Service Areas */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-emerald-100 hover:text-white transition-colors"
-                  >
-                    {link.name}
-                  </Link>
+            <h3 className="text-white font-bold text-lg mb-6 tracking-wider">SERVICE AREAS</h3>
+            <ul className="space-y-2 text-sm">
+              {serviceAreas.slice(0, 8).map((area) => (
+                <li key={area} className="text-gray-400">
+                  {area}
                 </li>
               ))}
             </ul>
@@ -95,37 +96,39 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-bold text-lg mb-6 tracking-wider">CONTACT</h3>
+            <ul className="space-y-4">
               <li>
                 <a 
-                  href="tel:+18001234567" 
-                  className="flex items-start gap-2 text-emerald-100 hover:text-white transition-colors"
+                  href="tel:+17209712020" 
+                  className="flex items-start gap-3 text-gray-400 hover:text-[#D4AF37] transition-colors group"
                 >
-                  <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>+1-800-123-4567</span>
+                  <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                  <span>+1 (720) 971-2020</span>
                 </a>
               </li>
               <li>
                 <a 
-                  href="mailto:support@example.com" 
-                  className="flex items-start gap-2 text-emerald-100 hover:text-white transition-colors"
+                  href="mailto:info@sprucemobiledetailing.com" 
+                  className="flex items-start gap-3 text-gray-400 hover:text-[#D4AF37] transition-colors group"
                 >
-                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>support@example.com</span>
+                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                  <span className="break-all">info@sprucemobiledetailing.com</span>
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-emerald-100">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>Serving Mississauga, Port Credit, Lorne Park & GTA</span>
+              <li className="flex items-start gap-3 text-gray-400">
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                <span>Serving South Denver Metro<br />Castle Rock to Cherry Creek</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-emerald-800 mt-8 pt-8 text-center text-emerald-100">
-          <p>&copy; {currentYear} Spruce Mobile Detailing. All rights reserved.</p>
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p className="text-gray-500 text-sm">
+            © {currentYear} Spruce Mobile Detailing. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
