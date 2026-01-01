@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,11 +35,15 @@
   }
   body {
     @apply bg-[#0A0A0A] text-foreground;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-white font-bold;
-    letter-spacing: 0.02em;
+    @apply text-white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 }
 
@@ -70,4 +76,61 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #F4E5A1;
+}
+
+/* Before After Slider */
+.before-after-slider {
+  position: relative;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.before-after-slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before-after-slider .after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.before-after-slider .slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #D4AF37;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.before-after-slider .slider-handle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #D4AF37;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.before-after-slider .slider-handle::after {
+  content: '⟷';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0A0A0A;
+  font-size: 24px;
+  font-weight: bold;
 }
