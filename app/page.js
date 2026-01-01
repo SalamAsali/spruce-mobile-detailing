@@ -167,7 +167,7 @@ export default function Home() {
       {/* Before & After */}
       <BeforeAfter />
 
-      {/* Process Section */}
+      {/* Process Section - Animated Timeline */}
       <section className="py-20 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white tracking-wider">
@@ -175,21 +175,28 @@ export default function Home() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] mx-auto mb-16"></div>
 
-          <div className="grid md:grid-cols-3 gap-8 relative">
-            {process.map((item, index) => (
-              <div key={index} className="relative">
-                <div className="bg-gray-900 border border-gray-800 rounded-lg p-8 hover:border-[#D4AF37] transition-colors">
-                  <div className="text-6xl font-bold text-[#D4AF37] mb-4 opacity-20">{item.step}</div>
-                  <h3 className="text-xl font-bold mb-4 text-white tracking-wider">{item.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{item.description}</p>
-                </div>
-                {index < process.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="text-[#D4AF37] w-8 h-8" />
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="hidden md:block absolute left-0 right-0 top-1/2 h-1 bg-gradient-to-r from-[#D4AF37] via-[#F4E5A1] to-[#D4AF37] transform -translate-y-1/2"></div>
+            
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              {process.map((item, index) => (
+                <div key={index} className="relative timeline-item">
+                  {/* Timeline Circle */}
+                  <div className="hidden md:flex absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#D4AF37] rounded-full items-center justify-center z-10 shadow-lg">
+                    <span className="text-black font-black text-2xl" style={{ fontFamily: 'Oswald' }}>
+                      {item.step}
+                    </span>
                   </div>
-                )}
-              </div>
-            ))}
+                  
+                  <div className="bg-gray-900 border border-gray-800 rounded-lg p-8 hover:border-[#D4AF37] transition-all duration-300 hover:shadow-2xl hover:shadow-[#D4AF37]/20 mt-12 h-full flex flex-col">
+                    <div className="md:hidden text-6xl font-bold text-[#D4AF37] mb-4 opacity-20">{item.step}</div>
+                    <h3 className="text-xl font-bold mb-4 text-white tracking-wider flex-shrink-0">{item.title}</h3>
+                    <p className="text-gray-400 leading-relaxed flex-grow">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
