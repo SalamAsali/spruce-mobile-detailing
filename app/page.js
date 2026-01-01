@@ -66,11 +66,11 @@ export default function Home() {
     },
     {
       question: 'How Do I Book An Appointment With Spruce Detailing?',
-      answer: 'Simply call us at (720) 971-2020 or use our online booking form. We\\'ll discuss your needs, provide a quote, and schedule a convenient time to come to your location.'
+      answer: 'Simply call us at (720) 971-2020 or use our online booking form. We will discuss your needs, provide a quote, and schedule a convenient time to come to your location.'
     },
     {
       question: 'How Long Does Car Detailing Take?',
-      answer: 'Timing varies based on vehicle size and service package. Basic detailing takes 2-3 hours, while comprehensive packages may take 4-6 hours. We\\'ll provide an accurate time estimate when you book.'
+      answer: 'Timing varies based on vehicle size and service package. Basic detailing takes 2-3 hours, while comprehensive packages may take 4-6 hours. We will provide an accurate time estimate when you book.'
     }
   ]
 
