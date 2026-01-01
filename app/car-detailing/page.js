@@ -5,11 +5,6 @@ import { CheckCircle, Sparkles, Shield, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
-export const metadata = {
-  title: 'Car Detailing Mississauga | Spruce Mobile Detailing',
-  description: 'Professional car detailing services in Mississauga and GTA. Interior and exterior detailing, luxury car care, and more.',
-}
-
 export default function CarDetailing() {
   const services = [
     {
