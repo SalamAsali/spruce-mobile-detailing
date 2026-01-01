@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, Mail, Clock, CheckCircle, Star } from 'lucide-react'
+import { Phone, CheckCircle, ArrowRight, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import BeforeAfter from '@/components/BeforeAfter'
@@ -9,245 +9,70 @@ import BeforeAfter from '@/components/BeforeAfter'
 export default function Home() {
   const services = [
     {
-      title: 'Car Detailing',
-      description: 'Step into a car that feels as new as the day you bought it. Our comprehensive car detailing services include interior deep cleaning, exterior washing and waxing, odor elimination, and scratch repair.',
-      link: '/car-detailing',
-      image: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=600&q=80'
+      title: 'CAR DETAILING',
+      description: 'Transform your car with our comprehensive interior and exterior detailing services. From deep cleaning to paint protection, we restore your vehicle to showroom condition.',
+      image: 'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=600&q=80',
+      link: '/car-detailing'
     },
     {
-      title: 'RV Detailing',
-      description: 'Travel in comfort with a pristine RV interior and exterior. We specialize in cleaning small recreational vehicles to large motorhomes, restoring shine and protecting against the elements.',
-      link: '/rv-detailing',
-      image: 'https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=600&q=80'
+      title: 'RV DETAILING',
+      description: 'Specialized care for your RV or motorhome. We handle everything from washing and waxing to full interior detailing, ensuring your home on wheels looks and feels amazing.',
+      image: 'https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=600&q=80',
+      link: '/rv-detailing'
     },
     {
-      title: 'Boat Detailing',
-      description: 'Keep your boat looking showroom-ready. Our expert boat detailing services include hull washing, gel coat polishing, interior cleaning, and protection against UV and water exposure.',
-      link: '/boat-detailing',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80'
+      title: 'BOAT DETAILING',
+      description: 'Professional marine detailing services for boats and yachts. Hull cleaning, gel coat polishing, interior detailing, and protection against harsh marine environments.',
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80',
+      link: '/boat-detailing'
+    }
+  ]
+
+  const benefits = [
+    'Team of expert detailing specialists',
+    'Premium products and professional techniques',
+    'Safe and certified mobile detailing products',
+    'Convenient service at your location',
+    'Flexible scheduling - weekends and evenings',
+    'Comprehensive mobile insurance coverage'
+  ]
+
+  const process = [
+    {
+      step: '01',
+      title: 'BOOK YOUR INSPECTION',
+      description: 'Schedule a consultation where we assess your vehicle and recommend the best detailing package for your needs.'
+    },
+    {
+      step: '02',
+      title: 'WE COME TO YOU',
+      description: 'Our mobile team arrives at your location with all professional equipment and premium products ready to work.'
+    },
+    {
+      step: '03',
+      title: 'DETAIL & SHINE',
+      description: 'We meticulously clean, polish, and protect every surface using advanced techniques and top-quality products.'
     }
   ]
 
   const faqs = [
     {
-      question: 'What Does Mobile Detailing Mean?',
-      answer: 'Mobile detailing means we come to your location—whether at home, office, or another convenient spot—with all the equipment and supplies needed to detail your vehicle. You don\'t have to drive anywhere; we bring our professional service directly to you.'
+      question: 'What Is Mobile Detailing?',
+      answer: 'Mobile detailing means we bring our professional services directly to your location in South Denver Metro. We have all equipment and supplies to detail your vehicle at your home, office, or any convenient spot.'
     },
     {
-      question: 'What Is Full Service Auto Detailing?',
-      answer: 'Full service auto detailing includes a comprehensive cleaning of both the interior and exterior of your vehicle. This typically involves vacuuming, shampooing, odor elimination, washing, waxing, tire cleaning, and protection treatments to restore your vehicle to like-new condition.'
+      question: 'What Does Full Service Auto Detailing Include?',
+      answer: 'Full service detailing includes comprehensive interior and exterior cleaning - vacuuming, shampooing, odor elimination, washing, waxing, tire cleaning, and protective treatments to restore your vehicle to like-new condition.'
     },
     {
-      question: 'Can You Detail A Car At Office Or Home?',
-      answer: 'Absolutely! That\'s the core of our mobile service. We can detail your vehicle at your home, office, or any location in the Greater Toronto Area that\'s convenient for you. All we need is access to water and electricity in most cases.'
+      question: 'How Do I Book An Appointment With Spruce Detailing?',
+      answer: 'Simply call us at (720) 971-2020 or use our online booking form. We\\'ll discuss your needs, provide a quote, and schedule a convenient time to come to your location.'
     },
     {
-      question: 'What Is The Difference Between A Car Wash And Detailing?',
-      answer: 'A car wash is a quick exterior cleaning that removes dirt and grime. Detailing is a thorough, comprehensive service that includes deep cleaning, polishing, waxing, and protection for both interior and exterior surfaces. Detailing restores and protects your vehicle, going far beyond a simple wash.'
+      question: 'How Long Does Car Detailing Take?',
+      answer: 'Timing varies based on vehicle size and service package. Basic detailing takes 2-3 hours, while comprehensive packages may take 4-6 hours. We\\'ll provide an accurate time estimate when you book.'
     }
   ]
 
   return (
-    <div className="min-h-screen">
-      {/* The Spruce Detailing Difference Section */}
-      <section className="bg-gradient-to-br from-emerald-900 to-emerald-800 text-white py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Mobile Detailing Mississauga</h1>
-            <p className="text-xl md:text-2xl mb-8">Professional Auto Detailing In Mississauga Done At Your Convenience</p>
-            <Button asChild size="lg" className="bg-white text-emerald-900 hover:bg-gray-100">
-              <Link href="#contact">Get in Touch</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Introduction */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <p className="text-lg text-gray-700 text-center leading-relaxed">
-            Serving across Mississauga and the Greater Toronto Area, Spruce Detailing specializes in professional mobile detailing. 
-            Our team thoroughly inspects your vehicle, understands its maintenance needs, and suggests the best detailing solutions. 
-            Whether you require exterior or interior mobile detailing, we will cater to your needs with care and dedication.
-          </p>
-        </div>
-      </section>
-
-      {/* The Spruce Detailing Difference */}
-      <section className="py-16 px-4 bg-emerald-50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-emerald-900">The Spruce Detailing Difference</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Your vehicle is a significant investment that deserves exceptional care. At Spruce Detailing, we understand 
-                that every vehicle has unique needs, which is why we offer flexible packages tailored to your specific requirements.
-              </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our convenient mobile services mean you never have to disrupt your busy schedule. We come to you—at home, 
-                at work, or wherever is most convenient—bringing professional-grade equipment and premium products to deliver 
-                outstanding results every time.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Flexible scheduling to fit your lifestyle</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Customized packages for every vehicle type</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Premium products and professional equipment</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" />
-                  <p className="text-gray-700">Serving Mississauga and Greater Toronto Area</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80" 
-                alt="Professional car detailing" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Before & After Section */}
-      <BeforeAfter />
-
-      {/* Services Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-4 text-emerald-900">
-            From Our Mobile Detailing Studio To Your Garage: An Immaculately Detailed Vehicle
-          </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-            We bring professional detailing services directly to your location across the Greater Toronto Area
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-3 text-emerald-900">{service.title}</h3>
-                  <p className="text-gray-700 mb-4">{service.description}</p>
-                  <Button asChild variant="outline" className="w-full border-emerald-600 text-emerald-600 hover:bg-emerald-50">
-                    <Link href={service.link}>Learn More</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Paint Protection Film Section */}
-      <section className="py-16 px-4 bg-emerald-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80" 
-                alt="Paint protection film application" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-emerald-900">Paint Protection Film</h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Protect your vehicle's paint from chips, scratches, and environmental damage with our premium paint 
-                protection film services. This invisible shield preserves your vehicle's finish while maintaining its 
-                original appearance.
-              </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our expert technicians apply high-quality film with precision, ensuring a seamless finish that keeps 
-                your vehicle looking pristine for years to come.
-              </p>
-              <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-                <Link href="#contact">Get a Free Quote</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-12 text-emerald-900">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-emerald-900">{faq.question}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-16 px-4 bg-emerald-50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-8 text-emerald-900">Serving Mississauga & Greater Toronto Area</h2>
-          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-            We bring our mobile detailing services to your location across Mississauga, Port Credit, Lorne Park, and the entire GTA.
-          </p>
-          <div className="rounded-lg overflow-hidden shadow-xl h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977252178!2d-79.69703599999999!3d43.5789543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b469fe76b05b7%3A0x3146cbed75966db!2sMississauga%2C%20ON!5e0!3m2!1sen!2sca!4v1234567890"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA Section */}
-      <section id="contact" className="py-16 px-4 bg-gradient-to-br from-emerald-900 to-emerald-800 text-white">
-        <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl font-bold mb-6">Get Your Free Quote Now</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Ready to experience the Spruce Detailing difference? Contact us today for a free, no-obligation quote.
-          </p>
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-8">
-            <a href="tel:+18001234567" className="flex items-center gap-2 text-lg hover:text-emerald-200 transition-colors">
-              <Phone className="w-5 h-5" />
-              +1-800-123-4567
-            </a>
-            <a href="mailto:support@example.com" className="flex items-center gap-2 text-lg hover:text-emerald-200 transition-colors">
-              <Mail className="w-5 h-5" />
-              support@example.com
-            </a>
-          </div>
-          <div className="flex gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-emerald-900 hover:bg-gray-100">
-              <a href="tel:+18001234567">Call Now</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-emerald-900">
-              <a href="mailto:support@example.com">Email Us</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+    <div className=\"min-h-screen bg-[#0A0A0A]\">\n      {/* Hero Section */}\n      <section className=\"relative h-screen flex items-center justify-center overflow-hidden\">\n        <div \n          className=\"absolute inset-0 bg-cover bg-center\"\n          style={{\n            backgroundImage: 'url(https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1920&q=80)',\n            backgroundPosition: 'center 40%'\n          }}\n        >\n          <div className=\"absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black\"></div>\n        </div>\n        \n        <div className=\"container mx-auto px-4 relative z-10 text-center\">\n          <h1 className=\"text-5xl md:text-7xl font-bold mb-6 text-white tracking-wider\">\n            MOBILE DETAILING\n          </h1>\n          <p className=\"text-[#D4AF37] text-xl md:text-2xl mb-8 tracking-widest font-light\">\n            Professional Auto Detailing In South Denver Done At Your Convenience\n          </p>\n          <Button size=\"lg\" className=\"bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-8 py-6 text-lg\">\n            <a href=\"tel:+17209712020\">GET IN TOUCH</a>\n          </Button>\n        </div>\n      </section>\n\n      {/* Services Section */}\n      <section id=\"services\" className=\"py-20 px-4 bg-black\">\n        <div className=\"container mx-auto max-w-7xl\">\n          <h2 className=\"text-4xl md:text-5xl font-bold text-center mb-4 text-white tracking-wider\">\n            FROM OUR MOBILE DETAILING STUDIO TO YOUR GARAGE\n          </h2>\n          <div className=\"w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] mx-auto mb-6\"></div>\n          <p className=\"text-center text-gray-400 mb-16 max-w-3xl mx-auto text-lg\">\n            We offer swift vehicle tire care and exceptional detailing services\n          </p>\n\n          <div className=\"grid md:grid-cols-3 gap-8\">\n            {services.map((service, index) => (\n              <Card key={index} className=\"bg-gray-900 border-gray-800 overflow-hidden hover:border-[#D4AF37] transition-all group\">\n                <div className=\"h-64 overflow-hidden\">\n                  <img \n                    src={service.image} \n                    alt={service.title}\n                    className=\"w-full h-full object-cover group-hover:scale-110 transition-transform duration-500\"\n                  />\n                </div>\n                <CardContent className=\"p-6\">\n                  <h3 className=\"text-2xl font-bold mb-3 text-white tracking-wider\">{service.title}</h3>\n                  <p className=\"text-gray-400 mb-6 leading-relaxed\">{service.description}</p>\n                  <Button asChild variant=\"outline\" className=\"w-full border-[#00BCD4] text-[#00BCD4] hover:bg-[#00BCD4] hover:text-white\">\n                    <Link href={service.link}>LEARN MORE</Link>\n                  </Button>\n                </CardContent>\n              </Card>\n            ))}\n          </div>\n        </div>\n      </section>\n\n      {/* Benefits Section */}\n      <section className=\"py-20 px-4 bg-[#0A0A0A]\">\n        <div className=\"container mx-auto max-w-6xl\">\n          <div className=\"grid md:grid-cols-2 gap-12 items-center\">\n            <div className=\"relative h-96 rounded-lg overflow-hidden\">\n              <img \n                src=\"https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80\" \n                alt=\"Professional car detailing\" \n                className=\"w-full h-full object-cover\"\n              />\n            </div>\n            <div>\n              <h2 className=\"text-4xl font-bold mb-6 text-white tracking-wider\">\n                ALL YOU NEED TO <span className=\"text-[#D4AF37]\">KNOW</span>\n              </h2>\n              <p className=\"text-gray-400 mb-8 leading-relaxed text-lg\">\n                Expert in offering first-rate detailing services for your automobiles, covering all your expectations. At Spruce Mobile Detailing in South Denver, Metro your car will receive quality care from qualified professionals.\n              </p>\n              <div className=\"space-y-4\">\n                {benefits.map((benefit, index) => (\n                  <div key={index} className=\"flex items-start gap-3\">\n                    <CheckCircle className=\"text-[#00BCD4] flex-shrink-0 mt-1 w-6 h-6\" />\n                    <p className=\"text-gray-300\">{benefit}</p>\n                  </div>\n                ))}\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n\n      {/* Before & After */}\n      <BeforeAfter />\n\n      {/* Process Section */}\n      <section className=\"py-20 px-4 bg-[#0A0A0A]\">\n        <div className=\"container mx-auto max-w-6xl\">\n          <h2 className=\"text-4xl md:text-5xl font-bold text-center mb-4 text-white tracking-wider\">\n            HOW OUR MOBILE DETAILING WORKS\n          </h2>\n          <div className=\"w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] mx-auto mb-16\"></div>\n\n          <div className=\"grid md:grid-cols-3 gap-8 relative\">\n            {process.map((item, index) => (\n              <div key={index} className=\"relative\">\n                <div className=\"bg-gray-900 border border-gray-800 rounded-lg p-8 hover:border-[#D4AF37] transition-colors\">\n                  <div className=\"text-6xl font-bold text-[#D4AF37] mb-4 opacity-20\">{item.step}</div>\n                  <h3 className=\"text-xl font-bold mb-4 text-white tracking-wider\">{item.title}</h3>\n                  <p className=\"text-gray-400 leading-relaxed\">{item.description}</p>\n                </div>\n                {index < process.length - 1 && (\n                  <div className=\"hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2\">\n                    <ArrowRight className=\"text-[#D4AF37] w-8 h-8\" />\n                  </div>\n                )}\n              </div>\n            ))}\n          </div>\n        </div>\n      </section>\n\n      {/* FAQ Section */}\n      <section className=\"py-20 px-4 bg-black\">\n        <div className=\"container mx-auto max-w-4xl\">\n          <h2 className=\"text-4xl md:text-5xl font-bold text-center mb-4 text-white tracking-wider\">\n            FREQUENTLY ASKED QUESTIONS\n          </h2>\n          <div className=\"w-24 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] mx-auto mb-16\"></div>\n\n          <div className=\"space-y-6\">\n            {faqs.map((faq, index) => (\n              <div key={index} className=\"bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-[#D4AF37] transition-colors\">\n                <h3 className=\"text-xl font-bold mb-3 text-white tracking-wide flex items-start gap-3\">\n                  <span className=\"text-[#D4AF37]\">•</span>\n                  {faq.question}\n                </h3>\n                <p className=\"text-gray-400 leading-relaxed pl-6\">{faq.answer}</p>\n              </div>\n            ))}\n          </div>\n        </div>\n      </section>\n\n      {/* CTA Section */}\n      <section className=\"py-20 px-4 bg-[#0A0A0A] border-t border-gray-800\">\n        <div className=\"container mx-auto max-w-6xl text-center\">\n          <h2 className=\"text-4xl md:text-5xl font-bold mb-6 text-white tracking-wider\">\n            EXPERIENCE PREMIUM MOBILE DETAILING\n          </h2>\n          <p className=\"text-gray-400 text-xl mb-8 max-w-2xl mx-auto\">\n            Don't waste time driving to a wash. Let Spruce Detailing bring professional automotive care right to your driveway in South Denver Metro.\n          </p>\n          <Button size=\"lg\" className=\"bg-[#00BCD4] hover:bg-[#00ACC1] text-white px-10 py-6 text-lg\">\n            <a href=\"tel:+17209712020\">GET YOUR FREE QUOTE NOW</a>\n          </Button>\n        </div>\n      </section>\n\n      {/* Map Section */}\n      <section className=\"h-96 relative\">\n        <iframe\n          src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392482.2662266!2d-104.99!3d39.5771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDM0JzM3LjYiTiAxMDTCsDUyJzM1LjAiVw!5e0!3m2!1sen!2sus!4v1234567890\"\n          width=\"100%\"\n          height=\"100%\"\n          style={{ border: 0 }}\n          allowFullScreen\n          loading=\"lazy\"\n          referrerPolicy=\"no-referrer-when-downgrade\"\n          className=\"grayscale\"\n        />\n      </section>\n    </div>\n  )\n}
