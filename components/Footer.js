@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react'
 
 export default function Footer() {
@@ -34,13 +35,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-2xl">S</span>
-              </div>
-              <div>
-                <div className="text-white font-bold text-lg tracking-wider">SPRUCE</div>
-                <div className="text-[#00BCD4] text-xs tracking-widest">MOBILE DETAILING</div>
-              </div>
+              <Image 
+                src="/logo.png" 
+                alt="Spruce Mobile Detailing" 
+                width={100} 
+                height={100}
+                className="object-contain"
+              />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Premium mobile detailing services in South Denver Metro. We bring professional auto care to your location.
@@ -103,7 +104,7 @@ export default function Footer() {
                   href="tel:+17209712020" 
                   className="flex items-start gap-3 text-gray-400 hover:text-[#D4AF37] transition-colors group"
                 >
-                  <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                  <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#1B9B8A]" />
                   <span>+1 (720) 971-2020</span>
                 </a>
               </li>
@@ -112,12 +113,12 @@ export default function Footer() {
                   href="mailto:info@sprucemobiledetailing.com" 
                   className="flex items-start gap-3 text-gray-400 hover:text-[#D4AF37] transition-colors group"
                 >
-                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#1B9B8A]" />
                   <span className="break-all">info@sprucemobiledetailing.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#00BCD4]" />
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#1B9B8A]" />
                 <span>Serving South Denver Metro<br />Castle Rock to Cherry Creek</span>
               </li>
             </ul>
