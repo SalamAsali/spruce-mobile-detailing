@@ -6,11 +6,6 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import BeforeAfter from '@/components/BeforeAfter'
 
-export const metadata = {
-  title: 'RV Detailing Mississauga | Spruce Mobile Detailing',
-  description: 'Professional RV detailing services in Mississauga and GTA. RV wash, wax, interior and exterior detailing for motorhomes.',
-}
-
 export default function RVDetailing() {
   const services = [
     {
