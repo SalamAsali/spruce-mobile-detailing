@@ -23,7 +23,7 @@ export default function Home() {
     {
       title: 'BOAT DETAILING',
       description: 'Professional marine detailing services for boats and yachts. Hull cleaning, gel coat polishing, and interior detailing.',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&q=80',
       link: '/boat-detailing'
     }
   ]
