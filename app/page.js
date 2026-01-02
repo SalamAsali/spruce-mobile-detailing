@@ -211,22 +211,22 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 px-4 bg-[#0A0A0A] relative">
+      <section id="services" className="py-16 md:py-24 px-4 bg-[#0A0A0A] relative">
         {/* Decorative Top Border */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
         
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               FROM OUR MOBILE DETAILING TEAM<br className="hidden md:block" /> TO YOUR GARAGE
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
-            <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+            <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-4 md:mb-6"></div>
+            <p className="text-gray-400 text-base md:text-xl max-w-3xl mx-auto leading-relaxed px-2">
               We offer swift vehicle tire care and exceptional detailing services
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {services.map((service, index) => {
               const Icon = service.icon
               return (
