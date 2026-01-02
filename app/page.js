@@ -168,7 +168,7 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             MOBILE DETAILING
           </h1>
           
