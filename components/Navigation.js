@@ -239,9 +239,9 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="lg:hidden py-6 border-t border-gray-800 max-h-[80vh] overflow-y-auto">
+        {/* Mobile Navigation - Always rendered but hidden */}
+        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="py-6 border-t border-gray-800 overflow-y-auto max-h-[70vh]">
             <div className="flex flex-col gap-2">
               <Link
                 href="/"
