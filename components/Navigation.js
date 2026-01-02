@@ -209,11 +209,11 @@ export default function Navigation() {
               )}
             </div>
 
-            <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-xs font-bold tracking-[0.15em] shadow-lg" style={{ fontFamily: 'Montserrat' }}>
-              <a href="tel:+17209712020" className="flex items-center gap-2">
+            <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-xs font-bold tracking-[0.15em] shadow-lg" style={{ fontFamily: 'Montserrat' }} asChild>
+              <Link href="/contact" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                CONTACT US
-              </a>
+                CONTACT
+              </Link>
             </Button>
           </div>
 
