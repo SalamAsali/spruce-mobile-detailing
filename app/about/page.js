@@ -61,7 +61,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] via-[#0F1419] to-[#0A0A0A]">
       {/* Hero Section */}
-      <section className="relative py-32 px-4 overflow-hidden">
+      <section className="relative py-32 px-4 pt-40 lg:pt-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
