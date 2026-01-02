@@ -308,11 +308,11 @@ export default function Navigation() {
                 <div className="grid grid-cols-2 gap-2 px-4">
                   {locationItems.slice(0, 6).map((location) => (
                     <div
-                      key={location}
+                      key={location.slug}
                       className="flex items-center gap-2 text-xs text-gray-400 py-2"
                     >
                       <div className="w-1.5 h-1.5 bg-[#1B9B8A] rounded-full"></div>
-                      {location}
+                      {location.name}
                     </div>
                   ))}
                 </div>
