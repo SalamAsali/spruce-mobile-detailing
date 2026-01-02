@@ -252,9 +252,15 @@ export default function Navigation() {
             <div className="border-t-2 border-gray-800 my-3 pt-3">
               {serviceCategories.map((category, catIdx) => (
                 <div key={catIdx} className="mb-4">
-                  <div className={`text-xs font-black mb-2 px-4 py-2 rounded-lg ${catIdx === 0 ? 'bg-[#1B9B8A]/10 text-[#1B9B8A] border border-[#1B9B8A]/30' : 'bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/30'}`}>
-                    {category.title}
+                  {/* Enhanced Header - Pops Out More */}
+                  <div className={`text-sm font-black mb-3 px-5 py-3 rounded-xl shadow-lg ${catIdx === 0 ? 'bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white border-2 border-[#1B9B8A]' : 'bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black border-2 border-[#D4AF37]'}`}>
+                    <div className="flex items-center justify-between">
+                      <span className="tracking-wider">{category.title}</span>
+                      <div className={`w-2 h-2 rounded-full ${catIdx === 0 ? 'bg-white' : 'bg-black'} animate-pulse`}></div>
+                    </div>
                   </div>
+                  
+                  {/* Service Items - Keep Current Design (User Likes It) */}
                   <div className="space-y-1">
                     {category.items.map((item) => {
                       const Icon = item.icon
