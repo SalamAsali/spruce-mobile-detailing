@@ -168,11 +168,11 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             MOBILE DETAILING
           </h1>
           
-          <p className="text-[#D4AF37] text-xl md:text-2xl mb-10 tracking-wide font-light max-w-4xl mx-auto leading-relaxed">
+          <p className="text-[#D4AF37] text-lg md:text-2xl mb-8 md:mb-10 tracking-wide font-light max-w-4xl mx-auto leading-relaxed px-4">
             Professional Auto Detailing from Castle Rock to Denver Metro<br className="hidden sm:block" /> & Surrounding Areas - Done At Your Convenience
           </p>
 
