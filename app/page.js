@@ -342,8 +342,8 @@ export default function Home() {
       <section className="py-24 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              HOW OUR MOBILE<br className="hidden sm:block" /> DETAILING WORKS
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              HOW OUR MOBILE DETAILING WORKS
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
             <p className="text-gray-400 text-xl max-w-2xl mx-auto">
