@@ -63,18 +63,18 @@ export default function Navigation() {
             </Link>
 
             <div className="flex items-center gap-8">
-              <Link href="/" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30" style={{ fontFamily: 'Montserrat' }}>
+              <Link href="/" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Go to homepage">
                 HOME
               </Link>
 
-              <Link href="/about" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30" style={{ fontFamily: 'Montserrat' }}>
+              <Link href="/about" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="About us page">
                 ABOUT US
               </Link>
 
               <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30" style={{ fontFamily: 'Montserrat' }}>
+                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Services menu" aria-expanded={servicesOpen}>
                   SERVICES
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                 </button>
                 
                 <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] transition-all duration-300 ease-out z-50 ${servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
