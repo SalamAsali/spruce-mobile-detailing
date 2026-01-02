@@ -52,14 +52,15 @@ export default function Navigation() {
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px]">
       <div className="bg-black/95 backdrop-blur-md border-2 border-gray-800/50 rounded-full shadow-2xl px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-4">
+          {/* Logo with Glow Effect */}
+          <Link href="/" className="flex items-center gap-4 relative group">
+            <div className="absolute inset-0 bg-white/30 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <Image 
               src="/logo.png" 
               alt="Spruce Mobile Detailing" 
-              width={80} 
-              height={80}
-              className="object-contain"
+              width={100} 
+              height={100}
+              className="object-contain relative z-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             />
           </Link>
 
