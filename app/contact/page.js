@@ -103,12 +103,28 @@ export default function Contact() {
                   <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto"></div>
                 </div>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={(e) => {
+                  e.preventDefault()
+                  const formData = new FormData(e.target)
+                  const data = {
+                    name: formData.get('name'),
+                    phone: formData.get('phone'),
+                    email: formData.get('email'),
+                    vehicle: formData.get('vehicle'),
+                    service: formData.get('service'),
+                    message: formData.get('message')
+                  }
+                  
+                  // For now, redirect to phone call (can be connected to backend later)
+                  window.location.href = `tel:+17209712020`
+                  alert('Thank you! We will call you shortly at ' + data.phone)
+                }}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-300 mb-2">Full Name *</label>
                       <input
                         type="text"
+                        name="name"
                         className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
                         placeholder="John Doe"
                         required
@@ -118,6 +134,7 @@ export default function Contact() {
                       <label className="block text-sm font-semibold text-gray-300 mb-2">Phone Number *</label>
                       <input
                         type="tel"
+                        name="phone"
                         className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
                         placeholder="(720) 555-0123"
                         required
@@ -129,6 +146,7 @@ export default function Contact() {
                     <label className="block text-sm font-semibold text-gray-300 mb-2">Email Address *</label>
                     <input
                       type="email"
+                      name="email"
                       className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
                       placeholder="john@example.com"
                       required
@@ -138,7 +156,7 @@ export default function Contact() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-semibold text-gray-300 mb-2">Vehicle Type *</label>
-                      <select className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors" required>
+                      <select name="vehicle" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors" required>
                         <option value="">Select vehicle type...</option>
                         <option value="car">Car</option>
                         <option value="rv">RV/Motorhome</option>
@@ -149,7 +167,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-gray-300 mb-2">Service Needed</label>
-                      <select className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors">
+                      <select name="service" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors">
                         <option value="">Select service...</option>
                         <option value="detailing">Detailing</option>
                         <option value="restoration">Restoration</option>
@@ -162,12 +180,13 @@ export default function Contact() {
                   <div>
                     <label className="block text-sm font-semibold text-gray-300 mb-2">Message</label>
                     <textarea
+                      name="message"
                       className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors h-32 resize-none"
                       placeholder="Tell us about your vehicle and what services you're interested in..."
                     ></textarea>
                   </div>
 
-                  <Button type="button" size="lg" className="w-full bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white py-6 text-lg font-bold shadow-xl">
+                  <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white py-6 text-lg font-bold shadow-xl">
                     <Send className="w-5 h-5 mr-2" />
                     SEND MESSAGE
                   </Button>
