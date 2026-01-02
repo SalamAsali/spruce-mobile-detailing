@@ -137,16 +137,14 @@ export default function Navigation() {
                 </div>
               </div>
 
-              <Link href="/membership" className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors relative group" style={{ fontFamily: 'Montserrat' }}>
+              <Link href="/membership" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30" style={{ fontFamily: 'Montserrat' }}>
                 MEMBERSHIP
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
               </Link>
 
               <div className="relative group" onMouseEnter={() => setLocationsOpen(true)} onMouseLeave={() => setLocationsOpen(false)}>
-                <button className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors flex items-center gap-1 relative group" style={{ fontFamily: 'Montserrat' }}>
+                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30" style={{ fontFamily: 'Montserrat' }}>
                   SERVICE AREAS
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${locationsOpen ? 'rotate-180' : ''}`} />
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
                 </button>
                 
                 <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[500px] transition-all duration-300 ease-out z-50 ${locationsOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
