@@ -198,7 +198,7 @@ export default function Navigation() {
       </nav>
 
       {/* Mobile Navigation */}
-      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b border-gray-800">
+      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b-2 border-[#D4AF37]/30">
         <div className="flex items-center justify-between px-4 h-16">
           <Link href="/" onClick={() => setIsOpen(false)}>
             <Image 
