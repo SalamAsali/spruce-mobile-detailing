@@ -49,9 +49,9 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="bg-black/98 backdrop-blur-sm border-b border-gray-800/50 sticky top-0 z-50">
-      <div className="container mx-auto px-6">
-        <div className="flex justify-between items-center h-24">
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px]">
+      <div className="bg-black/95 backdrop-blur-md border-2 border-gray-800/50 rounded-full shadow-2xl px-8">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4">
             <Image 
