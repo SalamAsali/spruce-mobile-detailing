@@ -181,7 +181,7 @@ export default function Navigation() {
                 </div>
               </div>
 
-              <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-xs font-bold tracking-[0.15em] shadow-lg" style={{ fontFamily: 'Montserrat' }} asChild>
+              <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-sm font-bold tracking-[0.12em] shadow-lg border-2 border-[#1B9B8A] hover:border-[#158F7E] transition-all" style={{ fontFamily: 'Montserrat' }} asChild>
                 <Link href="/contact" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   CONTACT
