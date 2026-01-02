@@ -183,8 +183,9 @@ export default function Home() {
                 GET IN TOUCH
               </Link>
             </Button>
+          </div>
 
-            {/* Trust Indicators */}
+          {/* Trust Indicators */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-400">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-[#1B9B8A]" />
