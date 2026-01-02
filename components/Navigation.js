@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Phone, ChevronDown, Car, Truck, Bike, Ship, Sparkles, Shield, Wrench, FileText } from 'lucide-react'
+import { Menu, X, Phone, ChevronDown, Car, Truck, Bike, Ship, Sparkles, Shield, Wrench, FileText, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export default function Navigation() {
