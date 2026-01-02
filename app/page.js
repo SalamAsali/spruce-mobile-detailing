@@ -447,8 +447,8 @@ export default function Home() {
       <section className="py-24 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              FREQUENTLY ASKED<br className="hidden sm:block" /> QUESTIONS
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              FREQUENTLY ASKED QUESTIONS
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto"></div>
           </div>
