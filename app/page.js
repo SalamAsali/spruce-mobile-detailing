@@ -173,7 +173,7 @@ export default function Home() {
           </h1>
           
           <p className="text-[#D4AF37] text-xl md:text-2xl mb-10 tracking-wide font-light max-w-4xl mx-auto leading-relaxed">
-            Professional Auto Detailing In South Denver<br className="hidden sm:block" /> Done At Your Convenience
+            Professional Auto Detailing from Castle Rock to Denver Metro<br className="hidden sm:block" /> & Surrounding Areas - Done At Your Convenience
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
