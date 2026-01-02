@@ -68,7 +68,7 @@ export default function CarDetailing() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] via-[#0F1419] to-[#0A0A0A]">
       {/* Hero Section */}
-      <section className="relative py-24 px-4 pt-40 lg:pt-32 overflow-hidden">
+      <section className="relative py-24 px-4 pt-44 md:pt-48 lg:pt-40 xl:pt-44 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
