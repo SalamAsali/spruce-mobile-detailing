@@ -175,48 +175,49 @@ export default function Navigation() {
 
             {/* Service Areas Dropdown */}
             <div 
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setLocationsOpen(true)}
               onMouseLeave={() => setLocationsOpen(false)}
             >
-              <button className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors flex items-center gap-1 group"
+              <button className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors flex items-center gap-1 relative group"
                 style={{ fontFamily: 'Montserrat' }}>
                 SERVICE AREAS
-                <ChevronDown className="w-4 h-4" />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${locationsOpen ? 'rotate-180' : ''}`} />
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
               </button>
-              {locationsOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[500px] bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl shadow-2xl py-6 px-6 z-50">
+              
+              <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[500px] transition-all duration-300 ease-out z-50 ${locationsOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+                <div className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl shadow-2xl py-6 px-6">
                   <h3 className="text-[#1B9B8A] text-xs font-bold tracking-wider mb-4" style={{ fontFamily: 'Montserrat' }}>
                     WE SERVE SOUTH DENVER METRO
                   </h3>
                   <div className="grid grid-cols-3 gap-3">
                     {locationItems.map((location) => (
-                      <div
-                        key={location}
+                      <Link
+                        key={location.name}
+                        href={`/locations/${location.slug}`}
                         className="flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-800 hover:border-[#1B9B8A] hover:bg-gray-800/50 transition-all group"
                       >
-                        <div className="w-6 h-6 bg-gradient-to-br from-[#1B9B8A]/20 to-gray-700 rounded flex items-center justify-center flex-shrink-0">
+                        <div className="w-6 h-6 bg-gradient-to-br from-[#1B9B8A]/20 to-gray-700 rounded flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                           <svg className="w-3 h-3 text-[#1B9B8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
                         </div>
                         <span className="text-xs text-gray-300 group-hover:text-white transition-colors" style={{ fontFamily: 'Montserrat' }}>
-                          {location}
+                          {location.name}
                         </span>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                   
-                  {/* Bottom note */}
                   <div className="mt-4 pt-4 border-t border-gray-800 text-center">
                     <p className="text-xs text-gray-400">
                       <span className="text-[#D4AF37] font-semibold">Mobile Service</span> • We come to you
                     </p>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
             <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-xs font-bold tracking-[0.15em] shadow-lg" style={{ fontFamily: 'Montserrat' }} asChild>
