@@ -124,19 +124,29 @@ export default function Navigation() {
                     ))}
                   </div>
                   
-                  {/* Bottom CTA */}
-                  <div className="mt-6 pt-6 border-t border-gray-800">
-                    <Link href="/services/restoration" className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-[#D4AF37]/20 to-[#1B9B8A]/20 rounded-xl border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all group">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-lg flex items-center justify-center">
-                          <Wrench className="w-5 h-5 text-black" />
-                        </div>
-                        <div>
-                          <span className="text-sm font-bold text-white block" style={{ fontFamily: 'Montserrat' }}>Featured: Restoration Services</span>
-                          <span className="text-xs text-gray-400">Transform your vehicle to showroom condition</span>
-                        </div>
+                  {/* Bottom CTAs */}
+                  <div className="mt-6 pt-6 border-t border-gray-800 flex gap-3">
+                    {/* Membership Highlight - 66% */}
+                    <Link href="/membership" className="flex-[2] flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-[#D4AF37]/20 to-[#1B9B8A]/20 rounded-xl border border-[#D4AF37]/30 hover:border-[#D4AF37] transition-all group">
+                      <div className="w-9 h-9 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Star className="w-4 h-4 text-black" />
                       </div>
-                      <ChevronDown className="w-5 h-5 text-[#D4AF37] rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
+                      <div className="flex-1 min-w-0">
+                        <span className="text-xs font-bold text-white block truncate" style={{ fontFamily: 'Montserrat' }}>Spruce Shield Club</span>
+                        <span className="text-[10px] text-gray-400 block truncate">30% off all services</span>
+                      </div>
+                      <ChevronDown className="w-4 h-4 text-[#D4AF37] rotate-[-90deg] group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                    </Link>
+
+                    {/* Service Areas - 33% */}
+                    <Link href="#service-areas" className="flex-1 flex flex-col items-center justify-center px-3 py-3 bg-gradient-to-br from-[#1B9B8A]/20 to-gray-800 rounded-xl border border-[#1B9B8A]/30 hover:border-[#1B9B8A] transition-all group">
+                      <div className="w-8 h-8 bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] rounded-lg flex items-center justify-center mb-1">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <span className="text-[10px] font-bold text-white text-center" style={{ fontFamily: 'Montserrat' }}>Service Areas</span>
                     </Link>
                   </div>
                 </div>
