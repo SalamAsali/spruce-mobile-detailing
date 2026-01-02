@@ -215,7 +215,12 @@ export default function Navigation() {
         </div>
 
         <div className={`bg-black/98 border-t border-gray-800 transition-all duration-300 ${isOpen ? 'max-h-[calc(100vh-4rem)]' : 'max-h-0'} overflow-hidden`}>
-          <div className="px-3 py-4 space-y-2 overflow-y-auto max-h-[calc(100vh-5rem)]">
+          <div className="px-3 py-4 space-y-2 overflow-y-auto max-h-[calc(100vh-5rem)] scroll-smooth">
+            {/* Scroll Indicator */}
+            <div className="sticky top-0 bg-gradient-to-b from-black via-black to-transparent pb-2 mb-2 z-10">
+              <div className="text-center text-xs text-gray-500">Scroll for more</div>
+            </div>
+            
             {/* Main Navigation with Borders */}
             <Link
               href="/"
