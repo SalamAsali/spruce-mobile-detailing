@@ -12,9 +12,14 @@ export default function Navigation() {
   const [locationsOpen, setLocationsOpen] = useState(false)
 
   const serviceItems = [
-    { name: 'Car Detailing', href: '/car-detailing' },
-    { name: 'RV Detailing', href: '/rv-detailing' },
-    { name: 'Boat Detailing', href: '/boat-detailing' },
+    { name: 'Car Detailing', href: '/services/car-detailing' },
+    { name: 'Car Ceramic Coating', href: '/services/car-ceramic-coating' },
+    { name: 'RV Detailing', href: '/services/rv-detailing' },
+    { name: 'RV Ceramic Coating', href: '/services/rv-ceramic-coating' },
+    { name: 'Truck Detailing', href: '/services/truck-detailing' },
+    { name: 'Truck Ceramic Coating', href: '/services/truck-ceramic-coating' },
+    { name: 'Motorcycle Detailing', href: '/services/motorcycle-detailing' },
+    { name: 'Motorcycle Ceramic Coating', href: '/services/motorcycle-ceramic-coating' },
   ]
 
   const locationItems = [
