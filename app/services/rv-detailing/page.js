@@ -322,7 +322,7 @@ export default function RVDetailing() {
               🌟 BONUS: SPRUCE SHIELD CLUB MEMBERSHIP 🌟
             </h3>
             <p className="text-gray-300 text-lg mb-4">
-              All Ultimate Restoration package customers receive <span className="text-[#D4AF37] font-bold">FREE LIFETIME MEMBERSHIP</span>
+              Purchase any <span className="text-[#D4AF37] font-bold">Ceramic Coating</span> or <span className="text-[#D4AF37] font-bold">Restoration</span> add-on and receive <span className="text-[#D4AF37] font-bold">FREE LIFETIME MEMBERSHIP</span>
             </p>
             <p className="text-gray-400 mb-6">
               Save 30% on all future maintenance washes • Priority booking • Annual inspection included
@@ -330,6 +330,67 @@ export default function RVDetailing() {
             <Button asChild variant="link" className="text-[#1B9B8A] hover:text-[#D4AF37] font-bold text-lg">
               <Link href="/membership">Learn More About Membership Benefits →</Link>
             </Button>
+          </div>
+
+          {/* Add-On Services */}
+          <div className="mt-16">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-black mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                PREMIUM ADD-ON SERVICES
+              </h3>
+              <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-4"></div>
+              <p className="text-gray-400">
+                Enhance any detailing package with these professional services
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {addOnServices.map((addon, index) => {
+                const Icon = addon.icon
+                return (
+                  <Card key={index} className={`bg-gradient-to-br from-gray-900 to-gray-800 border-2 ${addon.color} overflow-hidden relative group ${addon.featured ? 'md:scale-105' : ''}`}>
+                    {addon.featured && (
+                      <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black text-center py-2 text-xs font-black tracking-wider">
+                        ⭐ MOST REQUESTED ADD-ON ⭐
+                      </div>
+                    )}
+                    <CardContent className={`p-8 ${addon.featured ? 'pt-12' : ''}`}>
+                      <div className="flex items-start gap-4 mb-6">
+                        <div className={`w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 ${addon.featured ? 'bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1]' : 'bg-gradient-to-br from-[#1B9B8A] to-[#158F7E]'}`}>
+                          <Icon className={`w-7 h-7 ${addon.featured ? 'text-black' : 'text-white'}`} />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="text-2xl font-black mb-2 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{addon.name}</h4>
+                          <p className={`text-lg font-bold ${addon.featured ? 'text-[#D4AF37]' : 'text-[#1B9B8A]'}`}>{addon.price}</p>
+                        </div>
+                      </div>
+                      
+                      <p className="text-gray-300 mb-6 leading-relaxed">{addon.description}</p>
+                      
+                      <div className="space-y-2 mb-6">
+                        {addon.features.map((feature, fIndex) => (
+                          <div key={fIndex} className="flex items-center gap-2">
+                            <CheckCircle className={`w-4 h-4 ${addon.featured ? 'text-[#D4AF37]' : 'text-[#1B9B8A]'}`} />
+                            <span className="text-sm text-gray-400">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <Button className={`w-full py-4 font-bold ${addon.featured ? 'bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black hover:from-[#F4E5A1] hover:to-[#D4AF37]' : 'bg-[#1B9B8A] hover:bg-[#158F7E] text-white'}`}>
+                        <a href="tel:+17209712020">ADD TO PACKAGE</a>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                )
+              })}
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-gray-400 text-sm">
+                Add-ons can be combined with any detailing package above.<br />
+                <span className="text-[#D4AF37] font-semibold">Ceramic Coating + Restoration customers receive FREE Membership</span>
+              </p>
+            </div>
           </div>
         </div>
       </section>
