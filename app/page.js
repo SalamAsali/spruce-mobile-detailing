@@ -401,41 +401,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Timeline Scroll Animation Script */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            if (typeof window !== 'undefined') {
-              window.addEventListener('scroll', function() {
-                const timelineItems = document.querySelectorAll('.timeline-item');
-                const progressLine = document.querySelector('.timeline-progress');
-                
-                if (!timelineItems.length || !progressLine) return;
-                
-                const lastItem = timelineItems[timelineItems.length - 1];
-                const lastIcon = lastItem.querySelector('.timeline-icon');
-                
-                if (!lastIcon) return;
-                
-                const lastIconRect = lastIcon.getBoundingClientRect();
-                const lastIconCenter = lastIconRect.top + lastIconRect.height / 2;
-                const viewportHeight = window.innerHeight;
-                const scrollProgress = Math.max(0, Math.min(1, (viewportHeight / 2 - lastIconCenter) / viewportHeight));
-                
-                // Calculate total height from first to last icon
-                const firstItem = timelineItems[0];
-                const firstIcon = firstItem.querySelector('.timeline-icon');
-                if (!firstIcon) return;
-                
-                const firstIconRect = firstIcon.getBoundingClientRect();
-                const totalHeight = lastIconRect.top - firstIconRect.top + lastIconRect.height / 2;
-                const maxHeight = Math.max(0, totalHeight);
-                
-                progressLine.style.height = Math.min(maxHeight, scrollProgress * viewportHeight * 3) + 'px';
-              });
-            }
-          `
-        }} />
       </section>
 
       {/* FAQ Section - Accordion Style */}
