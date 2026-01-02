@@ -482,7 +482,7 @@ export default function Home() {
             </h2>
             
             <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
-              Let Spruce Detailing bring professional automotive care<br className="hidden sm:block" /> right to your driveway in South Denver Metro.
+              Let Spruce Detailing bring professional automotive care<br className="hidden sm:block" /> right to your location from Castle Rock to Denver Metro & surrounding areas.
             </p>
 
             <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105">
