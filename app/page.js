@@ -268,10 +268,10 @@ export default function Home() {
       </section>
 
       {/* All You Need To Know Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-[#0A0A0A] to-[#0F1419]">
+      <section className="py-16 md:py-24 px-4 bg-gradient-to-b from-[#0A0A0A] to-[#0F1419]">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80" 
                 alt="Professional car detailing" 
@@ -279,15 +279,15 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
-            <div>
-              <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <div className="px-2">
+              <h2 className="text-3xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 ALL YOU NEED TO<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1]">KNOW</span>
               </h2>
-              <p className="text-gray-400 mb-8 leading-relaxed text-lg">
-                Expert in offering first-rate detailing services for your automobiles. At Spruce Mobile Detailing in South Denver Metro, your car receives quality care from qualified professionals.
+              <p className="text-gray-400 mb-6 md:mb-8 leading-relaxed text-base md:text-lg">
+                Expert in offering first-rate detailing services for your automobiles. At Spruce Mobile Detailing from Castle Rock to Denver Metro, your car receives quality care from qualified professionals.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3 md:space-y-4">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3 group">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform">
