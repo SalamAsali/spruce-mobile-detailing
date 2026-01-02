@@ -167,6 +167,15 @@ export default function Navigation() {
                 ABOUT US
               </Link>
               
+              <Link
+                href="/membership"
+                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 tracking-wider transition-colors"
+                onClick={() => setIsOpen(false)}
+                style={{ fontFamily: 'Montserrat' }}
+              >
+                MEMBERSHIP
+              </Link>
+              
               {/* Mobile Services */}
               <div className="border-t border-gray-800 pt-4">
                 <div className="text-gray-500 text-xs font-bold mb-2 tracking-wider">SERVICES</div>
