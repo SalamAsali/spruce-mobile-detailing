@@ -31,9 +31,9 @@ export default function RVDetailing() {
 
   const pricingTiers = [
     {
-      name: 'Basic Care',
+      name: 'Basic Detail',
       pricePerFoot: 25,
-      description: 'Essential cleaning and maintenance for your RV',
+      description: 'Essential cleaning and maintenance',
       features: [
         'Exterior hand wash',
         'Interior vacuum and wipe-down',
@@ -49,14 +49,14 @@ export default function RVDetailing() {
     {
       name: 'Premium Detail',
       pricePerFoot: 50,
-      description: 'Comprehensive detailing for superior results',
+      description: 'Comprehensive detailing package',
       features: [
-        'Everything in Basic Care',
+        'Everything in Basic Detail',
         'Paint correction and waxing',
         'Deep interior shampooing',
         'Cabinet and storage deep clean',
         'Oxidation removal',
-        'Dashboard and console conditioning',
+        'Dashboard conditioning',
         'Chrome and metal polishing',
         'Air vent deep cleaning'
       ],
@@ -66,24 +66,42 @@ export default function RVDetailing() {
       popular: true
     },
     {
-      name: 'Ultimate Restoration',
+      name: 'Ultimate Detail',
       pricePerFoot: 150,
-      description: 'Complete restoration and premium protection',
+      description: 'Most comprehensive detailing service',
       features: [
         'Everything in Premium Detail',
         'Full gel coat restoration',
-        'Decal removal and replacement',
         'Complete oxidation correction',
-        'Ceramic coating application',
         'Engine bay detailing',
         'Undercarriage cleaning',
         'Awning cleaning and treatment',
         'Slide-out maintenance',
-        'FREE Spruce Shield Membership'
+        'Extended warranty protection'
       ],
       color: 'from-[#D4AF37] to-[#F4E5A1]',
       border: 'border-[#D4AF37]',
       buttonColor: 'bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black hover:from-[#F4E5A1] hover:to-[#D4AF37]'
+    }
+  ]
+
+  const addOnServices = [
+    {
+      name: 'Ceramic Coating',
+      price: 'Starting at $1,200',
+      description: 'Long-lasting protection with 3-5 year lifespan. Prevents oxidation and makes cleaning effortless.',
+      features: ['UV Protection', 'Hydrophobic surface', 'Easy maintenance', 'Gloss enhancement'],
+      icon: Shield,
+      color: 'border-[#1B9B8A]'
+    },
+    {
+      name: 'Complete Restoration',
+      price: 'Custom Quote',
+      description: 'Full vehicle restoration including paint correction, decal replacement, and surface renewal.',
+      features: ['Paint correction', 'Decal replacement', 'Surface renewal', 'Like-new finish'],
+      icon: Sparkles,
+      color: 'border-[#D4AF37]',
+      featured: true
     }
   ]
 
