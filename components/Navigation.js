@@ -151,7 +151,7 @@ export default function Navigation() {
                     </Link>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
             {/* Membership Link */}
