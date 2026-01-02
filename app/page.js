@@ -506,19 +506,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="h-[500px] relative">
+      {/* Map Section - South Denver Metro Highlighted */}
+      <section className="h-[500px] relative" id="service-areas">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196241.1331133!2d-104.99!3d39.5771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDM0JzM3LjYiTiAxMDTCsDUyJzM1LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392482.2662266!2d-105.1!3d39.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7c0e8ce8e8d9%3A0x5e5e5e5e5e5e5e5e!2sCastle%20Rock%2C%20CO!5e0!3m2!1sen!2sus!4v1234567890"
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="grayscale-[50%] contrast-125"
+          className="grayscale-[30%] contrast-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none"></div>
+        
+        {/* Service Area Overlay */}
+        <div className="absolute bottom-8 left-8 bg-gradient-to-r from-black/90 to-black/70 backdrop-blur-sm rounded-2xl p-6 border border-[#D4AF37]/30 max-w-md">
+          <h3 className="text-xl font-black text-white mb-3 flex items-center gap-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <div className="w-8 h-8 bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] rounded-lg flex items-center justify-center">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+            </div>
+            SOUTH DENVER METRO
+          </h3>
+          <p className="text-gray-300 text-sm mb-2">
+            Lakewood • Denver • Aurora • Centennial • Castle Rock
+          </p>
+          <p className="text-[#D4AF37] text-xs font-semibold">
+            + All cities in between • Mobile service
+          </p>
+        </div>
       </section>
     </div>
   )
