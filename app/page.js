@@ -477,8 +477,8 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              EXPERIENCE PREMIUM<br className="hidden sm:block" /> MOBILE DETAILING
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              EXPERIENCE PREMIUM MOBILE DETAILING
             </h2>
             
             <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
