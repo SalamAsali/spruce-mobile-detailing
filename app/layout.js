@@ -58,6 +58,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <FloatingCallButton />
       </body>
     </html>
   )
