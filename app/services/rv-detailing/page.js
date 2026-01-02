@@ -165,8 +165,8 @@ export default function RVDetailing() {
         </div>
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            RV DETAILING &<br className="hidden sm:block" /> RESTORATION
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            RV DETAILING & RESTORATION
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Specialized care for your RV or motorhome.<br className="hidden sm:block" /> Professional detailing and restoration services in South Denver Metro.
