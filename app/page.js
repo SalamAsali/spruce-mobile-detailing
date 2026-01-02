@@ -333,7 +333,7 @@ export default function Home() {
       {/* Before & After */}
       <BeforeAfter />
 
-      {/* Process Section - Vertical Timeline with Animation */}
+      {/* Process Section - Vertical Timeline with Scroll Animation */}
       <section className="py-24 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-20">
@@ -348,24 +348,30 @@ export default function Home() {
 
           {/* Vertical Timeline */}
           <div className="relative">
-            {/* Central Vertical Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#D4AF37] via-[#D4AF37] to-[#D4AF37] hidden md:block"></div>
+            {/* Background Line - Gray */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-800 hidden md:block" style={{ top: '40px', bottom: '40px' }}></div>
             
-            <div className="space-y-24">
+            {/* Animated Gold Line - Will be animated on scroll */}
+            <div 
+              className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#D4AF37] via-[#D4AF37] to-[#D4AF37] hidden md:block transition-all duration-700 ease-out timeline-progress"
+              style={{ top: '40px', height: '0%' }}
+            ></div>
+            
+            <div className="space-y-32 md:space-y-40">
               {process.map((item, index) => {
                 const Icon = item.icon
                 const isEven = index % 2 === 0
                 return (
-                  <div key={index} className="relative">
+                  <div key={index} className="relative timeline-item" data-index={index}>
                     {/* Timeline Icon Circle */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-full flex items-center justify-center z-20 shadow-2xl shadow-[#D4AF37]/50 hidden md:flex">
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-full flex items-center justify-center z-20 shadow-2xl shadow-[#D4AF37]/50 hidden md:flex timeline-icon">
                       <Icon className="w-8 h-8 text-black" />
                       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] animate-ping opacity-20"></div>
                     </div>
 
                     {/* Content Block */}
                     <div className={`flex items-center ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
-                      <div className={`w-full md:w-5/12 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
+                      <div className={`w-full md:w-5/12 ${isEven ? 'md:pr-16' : 'md:pl-16'}`}>
                         <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl p-8 hover:border-[#1B9B8A] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1B9B8A]/20 group relative">
                           {/* Mobile Icon */}
                           <div className="md:hidden w-14 h-14 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-xl flex items-center justify-center mb-4">
@@ -395,6 +401,41 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Timeline Scroll Animation Script */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            if (typeof window !== 'undefined') {
+              window.addEventListener('scroll', function() {
+                const timelineItems = document.querySelectorAll('.timeline-item');
+                const progressLine = document.querySelector('.timeline-progress');
+                
+                if (!timelineItems.length || !progressLine) return;
+                
+                const lastItem = timelineItems[timelineItems.length - 1];
+                const lastIcon = lastItem.querySelector('.timeline-icon');
+                
+                if (!lastIcon) return;
+                
+                const lastIconRect = lastIcon.getBoundingClientRect();
+                const lastIconCenter = lastIconRect.top + lastIconRect.height / 2;
+                const viewportHeight = window.innerHeight;
+                const scrollProgress = Math.max(0, Math.min(1, (viewportHeight / 2 - lastIconCenter) / viewportHeight));
+                
+                // Calculate total height from first to last icon
+                const firstItem = timelineItems[0];
+                const firstIcon = firstItem.querySelector('.timeline-icon');
+                if (!firstIcon) return;
+                
+                const firstIconRect = firstIcon.getBoundingClientRect();
+                const totalHeight = lastIconRect.top - firstIconRect.top + lastIconRect.height / 2;
+                const maxHeight = Math.max(0, totalHeight);
+                
+                progressLine.style.height = Math.min(maxHeight, scrollProgress * viewportHeight * 3) + 'px';
+              });
+            }
+          `
+        }} />
       </section>
 
       {/* FAQ Section - Accordion Style */}
