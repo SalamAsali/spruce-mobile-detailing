@@ -186,20 +186,20 @@ export default function Home() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-400">
+          <div className="mt-8 md:mt-12 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-gray-400 text-sm md:text-base px-4">
             <div className="flex items-center gap-2">
-              <Shield className="w-5 h-5 text-[#1B9B8A]" />
-              <span className="text-sm">Certified & Insured</span>
+              <Shield className="w-4 h-4 md:w-5 md:h-5 text-[#1B9B8A]" />
+              <span>Certified & Insured</span>
             </div>
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((i) => (
-                <Star key={i} className="w-5 h-5 fill-[#D4AF37] text-[#D4AF37]" />
+                <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-[#D4AF37] text-[#D4AF37]" />
               ))}
-              <span className="text-sm ml-2">5-Star Service</span>
+              <span className="ml-2">5-Star Service</span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-[#1B9B8A]" />
-              <span className="text-sm">Same-Day Available</span>
+              <Clock className="w-4 h-4 md:w-5 md:h-5 text-[#1B9B8A]" />
+              <span>Same-Day Available</span>
             </div>
           </div>
         </div>
