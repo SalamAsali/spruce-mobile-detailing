@@ -230,115 +230,125 @@ export default function Navigation() {
               </Link>
             </Button>
           </div>
+        </div>
+      </nav>
 
-          {/* Mobile Menu Button */}
+      {/* Mobile Navigation - Compact Header */}
+      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b border-gray-800">
+        <div className="flex items-center justify-between px-4 h-16">
+          <Link href="/" className="flex items-center">
+            <Image 
+              src="/logo.png" 
+              alt="Spruce Mobile Detailing" 
+              width={60} 
+              height={60}
+              className="object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
+            />
+          </Link>
+          
           <button
-            className="lg:hidden p-3 text-white hover:text-[#D4AF37] transition-colors"
+            className="p-2 text-white hover:text-[#D4AF37] transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+            {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
 
-        {/* Mobile Navigation - Always rendered but hidden */}
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className="py-6 border-t border-gray-800 overflow-y-auto max-h-[70vh]">
-            <div className="flex flex-col gap-2">
-              <Link
-                href="/"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
-                onClick={() => setIsOpen(false)}
-                style={{ fontFamily: 'Montserrat' }}
-              >
-                HOME
-              </Link>
-              <Link
-                href="/about"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
-                onClick={() => setIsOpen(false)}
-                style={{ fontFamily: 'Montserrat' }}
-              >
-                ABOUT US
-              </Link>
-              
-              <Link
-                href="/membership"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all flex items-center gap-2"
-                onClick={() => setIsOpen(false)}
-                style={{ fontFamily: 'Montserrat' }}
-              >
-                <Star className="w-4 h-4 text-[#D4AF37]" />
-                MEMBERSHIP
-              </Link>
-              
-              {/* Mobile Services */}
-              <div className="border-t border-gray-800 mt-2 pt-4">
-                {serviceCategories.map((category, catIndex) => (
-                  <div key={catIndex} className="mb-4">
-                    <div className={`text-xs font-bold mb-3 px-4 tracking-wider ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`}>{category.title}</div>
-                    <div className="space-y-1">
-                      {category.items.map((item) => {
-                        const Icon = item.icon
-                        return (
-                          <Link
-                            key={item.name}
-                            href={item.href}
-                            className="flex items-center gap-3 text-gray-300 hover:text-white text-sm py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all group"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                              <Icon className={`w-4 h-4 ${item.color}`} />
-                            </div>
-                            <span className="flex-1">{item.name}</span>
-                            {item.badge && (
-                              <span className="text-[9px] font-bold bg-[#D4AF37] text-black px-2 py-0.5 rounded-full">
-                                {item.badge}
-                              </span>
-                            )}
-                          </Link>
-                        )
-                      })}
-                    </div>
+        {/* Mobile Dropdown Menu */}
+        <div className={`absolute top-full left-0 right-0 bg-black/98 backdrop-blur-md border-b border-gray-800 overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[calc(100vh-4rem)]' : 'max-h-0'}`}>
+          <div className="px-4 py-4 space-y-1 overflow-y-auto max-h-[calc(100vh-5rem)]">
+            <Link
+              href="/"
+              className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
+              onClick={() => setIsOpen(false)}
+            >
+              HOME
+            </Link>
+            <Link
+              href="/about"
+              className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
+              onClick={() => setIsOpen(false)}
+            >
+              ABOUT US
+            </Link>
+            <Link
+              href="/membership"
+              className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all flex items-center gap-2"
+              onClick={() => setIsOpen(false)}
+            >
+              <Star className="w-4 h-4 text-[#D4AF37]" />
+              MEMBERSHIP
+            </Link>
+
+            {/* Services Accordion */}
+            <div className="border-t border-gray-800 mt-2 pt-2">
+              {serviceCategories.map((category, catIndex) => (
+                <div key={catIndex} className="mb-2">
+                  <div className={`text-xs font-bold mb-2 px-4 py-2 ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`}>
+                    {category.title}
                   </div>
+                  {category.items.map((item) => {
+                    const Icon = item.icon
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="flex items-center gap-3 text-gray-300 hover:text-white text-sm py-2 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <Icon className={`w-4 h-4 ${item.color}`} />
+                        <span className="flex-1">{item.name}</span>
+                        {item.badge && (
+                          <span className="text-[9px] font-bold bg-[#D4AF37] text-black px-2 py-0.5 rounded-full">
+                            {item.badge}
+                          </span>
+                        )}
+                      </Link>
+                    )
+                  })}
+                </div>
+              ))}
+            </div>
+
+            {/* Service Areas */}
+            <div className="border-t border-gray-800 mt-2 pt-2">
+              <div className="text-xs font-bold mb-2 px-4 py-2 text-[#1B9B8A]">SERVICE AREAS</div>
+              <div className="grid grid-cols-2 gap-1 px-2">
+                {locationItems.slice(0, 6).map((location) => (
+                  <Link
+                    key={location.slug}
+                    href={`/locations/${location.slug}`}
+                    className="flex items-center gap-2 text-xs text-gray-400 hover:text-white py-2 px-2 rounded transition-all"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <div className="w-1 h-1 bg-[#1B9B8A] rounded-full"></div>
+                    {location.name}
+                  </Link>
                 ))}
               </div>
+              <div className="text-xs text-gray-500 px-4 mt-1">+ {locationItems.length - 6} more</div>
+            </div>
 
-              {/* Mobile Service Areas */}
-              <div className="border-t border-gray-800 mt-2 pt-4">
-                <div className="text-xs font-bold mb-3 px-4 tracking-wider text-[#1B9B8A]">SERVICE AREAS</div>
-                <div className="grid grid-cols-2 gap-2 px-4">
-                  {locationItems.slice(0, 6).map((location) => (
-                    <div
-                      key={location.slug}
-                      className="flex items-center gap-2 text-xs text-gray-400 py-2"
-                    >
-                      <div className="w-1.5 h-1.5 bg-[#1B9B8A] rounded-full"></div>
-                      {location.name}
-                    </div>
-                  ))}
-                </div>
-                <div className="text-xs text-gray-500 px-4 mt-2">+ 6 more areas</div>
-              </div>
-
-              <div className="flex flex-col gap-3 mt-4 px-4">
-                <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white w-full py-6" asChild>
-                  <Link href="/contact" className="flex items-center gap-2 justify-center font-bold tracking-wider" onClick={() => setIsOpen(false)}>
-                    <Phone className="w-4 h-4" />
-                    CONTACT
-                  </Link>
-                </Button>
-                <Button variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black w-full py-6" asChild>
-                  <a href="tel:+17209712020" className="flex items-center gap-2 justify-center font-bold tracking-wider">
-                    <Phone className="w-4 h-4" />
-                    CALL NOW
-                  </a>
-                </Button>
-              </div>
+            {/* Mobile CTAs */}
+            <div className="flex flex-col gap-2 mt-4 px-2">
+              <Button className="w-full bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white py-5 font-bold" asChild>
+                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                  <Phone className="w-4 h-4 mr-2" />
+                  CONTACT
+                </Link>
+              </Button>
+              <Button variant="outline" className="w-full border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black py-5 font-bold" asChild>
+                <a href="tel:+17209712020">
+                  <Phone className="w-4 h-4 mr-2" />
+                  CALL NOW
+                </a>
+              </Button>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
+  )
   )
 }
