@@ -76,18 +76,19 @@ export default function Navigation() {
 
             {/* Services Mega Menu */}
             <div 
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors flex items-center gap-1 group"
+              <button className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors flex items-center gap-1 relative group"
                 style={{ fontFamily: 'Montserrat' }}>
                 SERVICES
-                <ChevronDown className="w-4 h-4" />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} />
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
               </button>
-              {servicesOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl shadow-2xl py-6 px-6 z-50">
+              
+              <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[600px] transition-all duration-300 ease-out z-50 ${servicesOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+                <div className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl shadow-2xl py-6 px-6">
                   <div className="grid grid-cols-2 gap-6">
                     {serviceCategories.map((category, catIndex) => (
                       <div key={catIndex} className="space-y-3">
