@@ -7,6 +7,45 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import BeforeAfter from '@/components/BeforeAfter'
 
+// FAQ Accordion Item Component
+function FAQItem({ faq, index }) {
+  const [isOpen, setIsOpen] = React.useState(index === 0)
+  
+  return (
+    <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl overflow-hidden hover:border-[#1B9B8A]/50 transition-all duration-300">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between p-6 text-left group"
+      >
+        <div className="flex items-start gap-4 flex-1">
+          <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 ${isOpen ? 'bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1]' : 'bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20'}`}>
+            <span className={`font-black text-lg ${isOpen ? 'text-black' : 'text-[#D4AF37]'}`} style={{ fontFamily: 'Montserrat' }}>
+              Q
+            </span>
+          </div>
+          <h3 className={`text-lg md:text-xl font-bold transition-colors leading-[1.4] ${isOpen ? 'text-[#D4AF37]' : 'text-white group-hover:text-[#1B9B8A]'}`} style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            {faq.question}
+          </h3>
+        </div>
+        <div className={`ml-4 flex-shrink-0 transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+          <svg className={`w-6 h-6 ${isOpen ? 'text-[#D4AF37]' : 'text-gray-400'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </button>
+      
+      <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+        <div className="px-6 pb-6">
+          <div className="pl-14 pr-10 pt-2">
+            <div className="h-px bg-gradient-to-r from-[#D4AF37]/50 to-transparent mb-4"></div>
+            <p className="text-gray-300 leading-relaxed text-lg">{faq.answer}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   const services = [
     {
