@@ -80,8 +80,8 @@ export default function CarDetailing() {
         </div>
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            CAR DETAILING<br className="hidden sm:block" /> SOUTH DENVER
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            CAR DETAILING SOUTH DENVER
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Transform your car with our comprehensive interior<br className="hidden sm:block" /> and exterior detailing services.
