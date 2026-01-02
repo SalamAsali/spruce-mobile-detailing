@@ -185,7 +185,10 @@ export default function Home() {
             {services.map((service, index) => {
               const Icon = service.icon
               return (
-                <Card key={index} className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 overflow-hidden hover:border-[#1B9B8A] transition-all duration-500 group">
+                <Card key={index} className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 overflow-hidden hover:border-[#1B9B8A] transition-all duration-500 group relative">
+                  {/* Gold Corner Accent */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-[#D4AF37]/20 to-transparent rounded-bl-3xl"></div>
+                  
                   <div className="h-56 overflow-hidden relative">
                     <img 
                       src={service.image} 
@@ -194,9 +197,12 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent"></div>
                     
-                    {/* Icon Overlay */}
-                    <div className="absolute bottom-4 left-4 w-14 h-14 bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] rounded-xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-7 h-7 text-white" />
+                    {/* Icon Overlay with Gold Ring */}
+                    <div className="absolute bottom-4 left-4 relative">
+                      <div className="absolute inset-0 w-14 h-14 rounded-xl border-2 border-[#D4AF37]/50 animate-pulse"></div>
+                      <div className="relative w-14 h-14 bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] rounded-xl flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-7 h-7 text-white" />
+                      </div>
                     </div>
                   </div>
                   
