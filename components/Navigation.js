@@ -229,11 +229,11 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-6 border-t border-gray-800">
-            <div className="flex flex-col gap-4">
+          <div className="lg:hidden py-6 border-t border-gray-800 max-h-[80vh] overflow-y-auto">
+            <div className="flex flex-col gap-2">
               <Link
                 href="/"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 tracking-wider transition-colors"
+                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
                 onClick={() => setIsOpen(false)}
                 style={{ fontFamily: 'Montserrat' }}
               >
@@ -241,7 +241,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/about"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 tracking-wider transition-colors"
+                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all"
                 onClick={() => setIsOpen(false)}
                 style={{ fontFamily: 'Montserrat' }}
               >
@@ -250,42 +250,77 @@ export default function Navigation() {
               
               <Link
                 href="/membership"
-                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 tracking-wider transition-colors"
+                className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all flex items-center gap-2"
                 onClick={() => setIsOpen(false)}
                 style={{ fontFamily: 'Montserrat' }}
               >
+                <Star className="w-4 h-4 text-[#D4AF37]" />
                 MEMBERSHIP
               </Link>
               
               {/* Mobile Services */}
-              <div className="border-t border-gray-800 pt-4">
+              <div className="border-t border-gray-800 mt-2 pt-4">
                 {serviceCategories.map((category, catIndex) => (
-                  <div key={catIndex} className="mb-6">
-                    <div className={`text-xs font-bold mb-3 tracking-wider ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`}>{category.title}</div>
-                    {category.items.map((item) => {
-                      const Icon = item.icon
-                      return (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center gap-3 text-gray-300 hover:text-[#D4AF37] text-sm py-2 pl-4"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          <Icon className="w-4 h-4" />
-                          {item.name}
-                        </Link>
-                      )
-                    })}
+                  <div key={catIndex} className="mb-4">
+                    <div className={`text-xs font-bold mb-3 px-4 tracking-wider ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`}>{category.title}</div>
+                    <div className="space-y-1">
+                      {category.items.map((item) => {
+                        const Icon = item.icon
+                        return (
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="flex items-center gap-3 text-gray-300 hover:text-white text-sm py-3 px-4 rounded-lg hover:bg-gray-800/50 transition-all group"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                              <Icon className={`w-4 h-4 ${item.color}`} />
+                            </div>
+                            <span className="flex-1">{item.name}</span>
+                            {item.badge && (
+                              <span className="text-[9px] font-bold bg-[#D4AF37] text-black px-2 py-0.5 rounded-full">
+                                {item.badge}
+                              </span>
+                            )}
+                          </Link>
+                        )
+                      })}
+                    </div>
                   </div>
                 ))}
               </div>
 
-              <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white w-full py-6 mt-4">
-                <a href="tel:+17209712020" className="flex items-center gap-2 justify-center font-bold tracking-wider">
-                  <Phone className="w-4 h-4" />
-                  CONTACT US
-                </a>
-              </Button>
+              {/* Mobile Service Areas */}
+              <div className="border-t border-gray-800 mt-2 pt-4">
+                <div className="text-xs font-bold mb-3 px-4 tracking-wider text-[#1B9B8A]">SERVICE AREAS</div>
+                <div className="grid grid-cols-2 gap-2 px-4">
+                  {locationItems.slice(0, 6).map((location) => (
+                    <div
+                      key={location}
+                      className="flex items-center gap-2 text-xs text-gray-400 py-2"
+                    >
+                      <div className="w-1.5 h-1.5 bg-[#1B9B8A] rounded-full"></div>
+                      {location}
+                    </div>
+                  ))}
+                </div>
+                <div className="text-xs text-gray-500 px-4 mt-2">+ 6 more areas</div>
+              </div>
+
+              <div className="flex flex-col gap-3 mt-4 px-4">
+                <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white w-full py-6" asChild>
+                  <Link href="/contact" className="flex items-center gap-2 justify-center font-bold tracking-wider" onClick={() => setIsOpen(false)}>
+                    <Phone className="w-4 h-4" />
+                    CONTACT
+                  </Link>
+                </Button>
+                <Button variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black w-full py-6" asChild>
+                  <a href="tel:+17209712020" className="flex items-center gap-2 justify-center font-bold tracking-wider">
+                    <Phone className="w-4 h-4" />
+                    CALL NOW
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         )}
