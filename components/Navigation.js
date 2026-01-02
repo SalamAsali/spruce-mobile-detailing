@@ -215,49 +215,81 @@ export default function Navigation() {
         </div>
 
         <div className={`bg-black/98 border-t border-gray-800 transition-all duration-300 ${isOpen ? 'max-h-[calc(100vh-4rem)]' : 'max-h-0'} overflow-hidden`}>
-          <div className="px-3 py-3 space-y-1 overflow-y-auto max-h-[calc(100vh-5rem)]">
-            {['Home', 'About Us', 'Membership'].map((item, idx) => (
-              <Link
-                key={item}
-                href={idx === 0 ? '/' : idx === 1 ? '/about' : '/membership'}
-                className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-2.5 px-3 rounded-lg hover:bg-gray-800/50 transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </Link>
-            ))}
+          <div className="px-3 py-4 space-y-2 overflow-y-auto max-h-[calc(100vh-5rem)]">
+            {/* Main Navigation with Borders */}
+            <Link
+              href="/"
+              className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-xl border-2 border-gray-800 hover:border-[#D4AF37]/50 bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 transition-all shadow-lg"
+              onClick={() => setIsOpen(false)}
+            >
+              HOME
+            </Link>
+            <Link
+              href="/about"
+              className="block text-white hover:text-[#D4AF37] text-sm font-semibold py-3 px-4 rounded-xl border-2 border-gray-800 hover:border-[#D4AF37]/50 bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 transition-all shadow-lg"
+              onClick={() => setIsOpen(false)}
+            >
+              ABOUT US
+            </Link>
+            
+            {/* Membership - Special Highlight */}
+            <Link
+              href="/membership"
+              className="flex items-center gap-3 text-white hover:text-black text-sm font-semibold py-3 px-4 rounded-xl border-2 border-[#D4AF37]/40 bg-gradient-to-r from-[#D4AF37]/20 to-[#1B9B8A]/20 hover:from-[#D4AF37] hover:to-[#F4E5A1] transition-all shadow-lg"
+              onClick={() => setIsOpen(false)}
+            >
+              <Star className="w-5 h-5 text-[#D4AF37]" />
+              <span className="flex-1">MEMBERSHIP</span>
+              <span className="text-xs bg-black/30 px-2 py-1 rounded-full">30% OFF</span>
+            </Link>
 
-            <div className="border-t border-gray-800 my-2 pt-2">
+            {/* Services Section with Box Design */}
+            <div className="border-t-2 border-gray-800 my-3 pt-3">
               {serviceCategories.map((category, catIdx) => (
-                <div key={catIdx} className="mb-2">
-                  <div className={`text-xs font-bold mb-1 px-3 ${catIdx === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`}>
+                <div key={catIdx} className="mb-4">
+                  <div className={`text-xs font-black mb-2 px-4 py-2 rounded-lg ${catIdx === 0 ? 'bg-[#1B9B8A]/10 text-[#1B9B8A] border border-[#1B9B8A]/30' : 'bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/30'}`}>
                     {category.title}
                   </div>
-                  {category.items.map((item) => {
-                    const Icon = item.icon
-                    return (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="flex items-center gap-2 text-gray-300 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-gray-800/50 transition-all"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        <Icon className={`w-4 h-4 ${item.color}`} />
-                        <span className="flex-1">{item.name}</span>
-                        {item.badge && <span className="text-[8px] bg-[#D4AF37] text-black px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>}
-                      </Link>
-                    )
-                  })}
+                  <div className="space-y-1">
+                    {category.items.map((item) => {
+                      const Icon = item.icon
+                      return (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="flex items-center gap-3 text-gray-300 hover:text-white text-sm py-3 px-4 rounded-xl border-2 border-gray-800 hover:border-[#1B9B8A]/50 bg-gradient-to-r from-gray-900 to-gray-800 hover:from-gray-800 hover:to-gray-700 transition-all shadow-md group"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <div className="w-8 h-8 bg-gradient-to-br from-gray-800 to-gray-700 rounded-lg flex items-center justify-center border border-gray-700 group-hover:border-[#1B9B8A]/50 group-hover:scale-110 transition-all">
+                            <Icon className={`w-4 h-4 ${item.color}`} />
+                          </div>
+                          <span className="flex-1 font-semibold">{item.name}</span>
+                          {item.badge && (
+                            <span className="text-[9px] font-black bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black px-2 py-1 rounded-full shadow-sm">
+                              {item.badge}
+                            </span>
+                          )}
+                        </Link>
+                      )
+                    })}
+                  </div>
                 </div>
               ))}
             </div>
 
-            <div className="flex gap-2 mt-3">
-              <Button className="flex-1 bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white py-4 text-sm font-bold" asChild>
-                <Link href="/contact" onClick={() => setIsOpen(false)}>CONTACT</Link>
+            {/* CTA Buttons with Strong Visual Design */}
+            <div className="flex gap-2 mt-4 px-1">
+              <Button className="flex-1 bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white py-5 text-sm font-bold rounded-xl shadow-xl border-2 border-[#1B9B8A] hover:border-[#158F7E] transition-all" asChild>
+                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                  <Phone className="w-4 h-4 mr-2" />
+                  CONTACT
+                </Link>
               </Button>
-              <Button variant="outline" className="flex-1 border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black py-4 text-sm font-bold" asChild>
-                <a href="tel:+17209712020">CALL</a>
+              <Button className="flex-1 border-2 border-[#D4AF37] bg-gradient-to-r from-[#D4AF37]/10 to-transparent text-[#D4AF37] hover:from-[#D4AF37] hover:to-[#F4E5A1] hover:text-black py-5 text-sm font-bold rounded-xl shadow-xl transition-all" asChild>
+                <a href="tel:+17209712020">
+                  <Phone className="w-4 h-4 mr-2" />
+                  CALL
+                </a>
               </Button>
             </div>
           </div>
