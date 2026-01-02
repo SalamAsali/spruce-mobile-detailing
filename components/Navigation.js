@@ -91,6 +91,16 @@ export default function Navigation() {
               )}
             </div>
 
+            {/* Membership Link */}
+            <Link
+              href="/membership"
+              className="text-gray-300 hover:text-[#D4AF37] text-xs font-semibold tracking-[0.15em] transition-colors relative group"
+              style={{ fontFamily: 'Montserrat' }}
+            >
+              MEMBERSHIP
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
+            </Link>
+
             {/* Locations Dropdown */}
             <div 
               className="relative"
