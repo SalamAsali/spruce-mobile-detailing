@@ -49,9 +49,11 @@ export default function Navigation() {
   ]
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px]">
-      <div className="bg-black/95 backdrop-blur-md border-2 border-gray-800/50 rounded-full shadow-2xl px-10 py-2">
-        <div className="flex justify-between items-center h-24">
+    <>
+      {/* Desktop Navigation - Floating Pill */}
+      <nav className="hidden lg:block fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px]">
+        <div className="bg-black/95 backdrop-blur-md border-2 border-gray-800/50 rounded-full shadow-2xl px-10 py-2">
+          <div className="flex justify-between items-center h-24">
           {/* Logo with Glow Effect */}
           <Link href="/" className="flex items-center gap-4 relative group">
             <div className="absolute inset-0 bg-white/30 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
