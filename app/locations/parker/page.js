@@ -16,7 +16,7 @@ export default function ParkerPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] via-[#0F1419] to-[#0A0A0A]">
-      <section className="relative py-24 px-4 overflow-hidden">
+      <section className="relative py-24 px-4 pt-32 lg:pt-24 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80)', backgroundPosition: 'center' }}>
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/85 to-black"></div>
         </div>
