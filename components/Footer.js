@@ -8,9 +8,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const services = [
-    { name: 'Car Detailing', href: '/car-detailing' },
-    { name: 'RV Detailing', href: '/rv-detailing' },
-    { name: 'Boat Detailing', href: '/boat-detailing' },
+    { name: 'Car Detailing', href: '/services/car-detailing' },
+    { name: 'RV Detailing', href: '/services/rv-detailing' },
+    { name: 'Truck Detailing', href: '/services/truck-detailing' },
+    { name: 'Motorcycle Detailing', href: '/services/motorcycle-detailing' },
+    { name: 'Ceramic Coating', href: '/services/car-ceramic-coating' },
+    { name: 'Membership', href: '/membership' },
   ]
 
   const serviceAreas = [
