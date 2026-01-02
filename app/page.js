@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import Link from 'next/link'
 import { Phone, CheckCircle, ArrowRight, Shield, Clock, Award, Star, Sparkles, Car, Truck, Bike } from 'lucide-react'
 import { Button } from '@/components/ui/button'
