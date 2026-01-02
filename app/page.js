@@ -176,14 +176,15 @@ export default function Home() {
             Professional Auto Detailing In South Denver<br className="hidden sm:block" /> Done At Your Convenience
           </p>
 
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105">
-            <a href="tel:+17209712020" className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              GET IN TOUCH
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105" asChild>
+              <Link href="/contact" className="flex items-center gap-2">
+                <Phone className="w-5 h-5" />
+                GET IN TOUCH
+              </Link>
+            </Button>
 
-          {/* Trust Indicators */}
+            {/* Trust Indicators */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-gray-400">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-[#1B9B8A]" />
