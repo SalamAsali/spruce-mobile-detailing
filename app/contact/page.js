@@ -121,42 +121,48 @@ export default function Contact() {
                 }}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-semibold text-gray-300 mb-2">Full Name *</label>
+                      <label htmlFor="name" className="block text-sm font-semibold text-gray-300 mb-2">Full Name *</label>
                       <input
+                        id="name"
                         type="text"
                         name="name"
-                        className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors"
                         placeholder="John Doe"
                         required
+                        aria-required="true"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-gray-300 mb-2">Phone Number *</label>
+                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-300 mb-2">Phone Number *</label>
                       <input
+                        id="phone"
                         type="tel"
                         name="phone"
-                        className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors"
                         placeholder="(720) 555-0123"
                         required
+                        aria-required="true"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-gray-300 mb-2">Email Address *</label>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-300 mb-2">Email Address *</label>
                     <input
+                      id="email"
                       type="email"
                       name="email"
-                      className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors"
                       placeholder="john@example.com"
                       required
+                      aria-required="true"
                     />
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-semibold text-gray-300 mb-2">Vehicle Type *</label>
-                      <select name="vehicle" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors" required>
+                      <label htmlFor="vehicle" className="block text-sm font-semibold text-gray-300 mb-2">Vehicle Type *</label>
+                      <select id="vehicle" name="vehicle" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors" required aria-required="true">
                         <option value="">Select vehicle type...</option>
                         <option value="car">Car</option>
                         <option value="rv">RV/Motorhome</option>
@@ -166,8 +172,8 @@ export default function Contact() {
                       </select>
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-gray-300 mb-2">Service Needed</label>
-                      <select name="service" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors">
+                      <label htmlFor="service" className="block text-sm font-semibold text-gray-300 mb-2">Service Needed</label>
+                      <select id="service" name="service" className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors" aria-label="Select service type">
                         <option value="">Select service...</option>
                         <option value="detailing">Detailing</option>
                         <option value="restoration">Restoration</option>
@@ -178,11 +184,13 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-gray-300 mb-2">Message</label>
+                    <label htmlFor="message" className="block text-sm font-semibold text-gray-300 mb-2">Message</label>
                     <textarea
+                      id="message"
                       name="message"
-                      className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none transition-colors h-32 resize-none"
+                      className="w-full px-4 py-3 bg-gray-800 border-2 border-gray-700 rounded-lg text-white focus:border-[#1B9B8A] focus:outline-none focus:ring-2 focus:ring-[#1B9B8A]/50 transition-colors h-32 resize-none"
                       placeholder="Tell us about your vehicle and what services you're interested in..."
+                      aria-label="Additional message or comments"
                     ></textarea>
                   </div>
 
