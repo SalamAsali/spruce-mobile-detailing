@@ -55,10 +55,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-        <FloatingCallButton />
+        <div className="overflow-x-hidden">
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+          <FloatingCallButton />
+        </div>
       </body>
     </html>
   )
