@@ -34,9 +34,18 @@ export default function Navigation() {
   ]
 
   const locationItems = [
-    'Castle Rock', 'Parker', 'Highlands Ranch', 'Centennial',
-    'Littleton', 'Greenwood Village', 'Lone Tree', 'South Aurora',
-    'Lakewood', 'Englewood', 'Cherry Creek', 'Washington Park'
+    { name: 'Denver', slug: 'denver' },
+    { name: 'Lakewood', slug: 'lakewood' },
+    { name: 'Aurora', slug: 'aurora' },
+    { name: 'South Denver', slug: 'south-denver' },
+    { name: 'Centennial', slug: 'centennial' },
+    { name: 'Englewood', slug: 'englewood' },
+    { name: 'Lone Tree', slug: 'lone-tree' },
+    { name: 'Parker', slug: 'parker' },
+    { name: 'Castle Rock', slug: 'castle-rock' },
+    { name: 'Highlands Ranch', slug: 'highlands-ranch' },
+    { name: 'Greenwood Village', slug: 'greenwood-village' },
+    { name: 'South Aurora', slug: 'south-aurora' }
   ]
 
   return (
