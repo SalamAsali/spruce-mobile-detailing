@@ -122,7 +122,7 @@ export default function Home() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-person-washing-a-car-with-a-sponge-4085-large.mp4" type="video/mp4" />
+            <source src="https://customer-assets.emergentagent.com/job_d65b521f-106d-4ea6-ab42-030731ea7e91/artifacts/at6jgjoi_Detailing.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90"></div>
         </div>
