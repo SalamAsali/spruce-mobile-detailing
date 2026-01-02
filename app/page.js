@@ -287,10 +287,10 @@ export default function Home() {
       {/* Before & After */}
       <BeforeAfter />
 
-      {/* Process Section - How It Works */}
+      {/* Process Section - Vertical Timeline with Animation */}
       <section className="py-24 px-4 bg-[#0A0A0A]">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               HOW OUR MOBILE<br className="hidden sm:block" /> DETAILING WORKS
             </h2>
@@ -300,33 +300,48 @@ export default function Home() {
             </p>
           </div>
 
+          {/* Vertical Timeline */}
           <div className="relative">
-            {/* Timeline Line - Desktop */}
-            <div className="hidden md:block absolute left-0 right-0 top-20 h-1 bg-gradient-to-r from-[#1B9B8A] via-[#D4AF37] to-[#1B9B8A]"></div>
+            {/* Central Vertical Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#D4AF37] via-[#D4AF37] to-[#D4AF37] hidden md:block"></div>
             
-            <div className="grid md:grid-cols-3 gap-8 relative">
+            <div className="space-y-24">
               {process.map((item, index) => {
                 const Icon = item.icon
+                const isEven = index % 2 === 0
                 return (
                   <div key={index} className="relative">
-                    {/* Timeline Circle */}
-                    <div className="flex justify-center mb-6">
-                      <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-full flex items-center justify-center z-10 shadow-2xl shadow-[#D4AF37]/50 relative">
-                        <span className="text-black font-black text-3xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                          {item.step}
-                        </span>
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] animate-ping opacity-20"></div>
-                      </div>
+                    {/* Timeline Icon Circle */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-full flex items-center justify-center z-20 shadow-2xl shadow-[#D4AF37]/50 hidden md:flex">
+                      <Icon className="w-8 h-8 text-black" />
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] animate-ping opacity-20"></div>
                     </div>
-                    
-                    <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl p-8 hover:border-[#1B9B8A] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1B9B8A]/20 text-center group">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-8 h-8 text-[#1B9B8A]" />
+
+                    {/* Content Block */}
+                    <div className={`flex items-center ${isEven ? 'md:justify-end' : 'md:justify-start'} justify-center`}>
+                      <div className={`w-full md:w-5/12 ${isEven ? 'md:pr-12' : 'md:pl-12'}`}>
+                        <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl p-8 hover:border-[#1B9B8A] transition-all duration-300 hover:shadow-2xl hover:shadow-[#1B9B8A]/20 group relative">
+                          {/* Mobile Icon */}
+                          <div className="md:hidden w-14 h-14 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-xl flex items-center justify-center mb-4">
+                            <Icon className="w-7 h-7 text-black" />
+                          </div>
+                          
+                          {/* Step Number */}
+                          <div className="inline-block bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                            STEP {item.step}
+                          </div>
+                          
+                          <h3 className="text-2xl font-black mb-4 text-white tracking-wide leading-[1.3]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                            {item.title}
+                          </h3>
+                          <p className="text-gray-400 leading-relaxed text-lg">{item.description}</p>
+                          
+                          {/* Decorative Arrow */}
+                          <div className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 ${isEven ? '-right-8' : '-left-8'} w-8 h-8`}>
+                            <div className={`w-0 h-0 border-t-8 border-b-8 border-transparent ${isEven ? 'border-l-8 border-l-gray-800' : 'border-r-8 border-r-gray-800'}`}></div>
+                          </div>
+                        </div>
                       </div>
-                      <h3 className="text-xl font-black mb-4 text-white tracking-wide leading-[1.3]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                        {item.title}
-                      </h3>
-                      <p className="text-gray-400 leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 )
