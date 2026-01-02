@@ -6,6 +6,7 @@ import { Phone, CheckCircle, ArrowRight, Shield, Clock, Award, Star, Sparkles, C
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import BeforeAfter from '@/components/BeforeAfter'
+import TimelineProgress from '@/components/TimelineProgress'
 
 // FAQ Accordion Item Component
 function FAQItem({ faq, index }) {
