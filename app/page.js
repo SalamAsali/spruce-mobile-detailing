@@ -354,14 +354,8 @@ export default function Home() {
 
           {/* Vertical Timeline */}
           <div className="relative">
-            {/* Background Line - Gray */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-800 hidden md:block" style={{ top: '40px', bottom: '40px' }}></div>
-            
-            {/* Animated Gold Line - Will be animated on scroll */}
-            <div 
-              className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#D4AF37] via-[#D4AF37] to-[#D4AF37] hidden md:block transition-all duration-700 ease-out timeline-progress"
-              style={{ top: '40px', height: '0%' }}
-            ></div>
+            {/* Animated Timeline Line */}
+            <TimelineProgress />
             
             <div className="space-y-32 md:space-y-40">
               {process.map((item, index) => {
