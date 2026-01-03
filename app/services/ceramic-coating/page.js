@@ -43,7 +43,7 @@ export default function CeramicCoating() {
           </div>
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>CERAMIC<br className="hidden sm:block" /> COATING</h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">Professional nano-technology protection for all vehicles.<br className="hidden sm:block" /> System X & Glidecoat certified installers.</p>
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-10 py-7 text-lg font-bold" asChild>
+          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-10 py-6 text-lg font-bold" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />GET FREE QUOTE</Link>
           </Button>
         </div>
@@ -107,7 +107,7 @@ export default function CeramicCoating() {
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>GET CERAMIC COATING<br className="hidden sm:block" /> PROTECTION TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Warranty-backed ceramic coating from certified professionals</p>
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-7 text-lg font-bold" asChild>
+          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL (720) 971-2020</a>
           </Button>
         </div>

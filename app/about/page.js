@@ -216,10 +216,10 @@ export default function About() {
             Contact our certified team for a free consultation<br className="hidden sm:block" /> and personalized service package.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-7 text-lg font-bold" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
               <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL (720) 971-2020</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-12 py-7 text-lg font-bold" asChild>
+            <Button size="lg" variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-12 py-6 text-lg font-bold" asChild>
               <Link href="/contact">GET FREE QUOTE</Link>
             </Button>
           </div>

@@ -178,7 +178,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-6 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105" asChild>
               <Link href="/contact" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 GET IN TOUCH
@@ -446,7 +446,7 @@ export default function Home() {
               Let Spruce Detailing bring professional automotive care<br className="hidden sm:block" /> right to your location from Castle Rock to Denver Metro & surrounding areas.
             </p>
 
-            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105">
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-6 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105">
               <a href="tel:+17209712020" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 GET YOUR FREE QUOTE NOW

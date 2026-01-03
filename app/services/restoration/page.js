@@ -74,10 +74,10 @@ export default function Restoration() {
             Transform faded, oxidized vehicles back to showroom condition.<br className="hidden sm:block" /> Professional restoration from Castle Rock to Denver Metro.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] hover:from-[#F4E5A1] hover:to-[#D4AF37] text-black px-10 py-7 text-lg font-bold shadow-2xl" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] hover:from-[#F4E5A1] hover:to-[#D4AF37] text-black px-10 py-6 text-lg font-bold shadow-2xl" asChild>
               <Link href="/contact"><Wrench className="w-5 h-5 mr-2" />GET FREE TEST PATCH</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-[#1B9B8A] text-[#1B9B8A] hover:bg-[#1B9B8A] hover:text-white px-10 py-7 text-lg font-bold" asChild>
+            <Button size="lg" variant="outline" className="border-2 border-[#1B9B8A] text-[#1B9B8A] hover:bg-[#1B9B8A] hover:text-white px-10 py-6 text-lg font-bold" asChild>
               <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL NOW</a>
             </Button>
           </div>
@@ -168,7 +168,7 @@ export default function Restoration() {
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>READY TO RESTORE<br className="hidden sm:block" /> YOUR VEHICLE?</h2>
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">Get a free test patch and see the transformation yourself.<br className="hidden sm:block" /> Custom quotes for every project.</p>
-          <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black px-12 py-7 text-lg font-bold shadow-2xl" asChild>
+          <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black px-12 py-6 text-lg font-bold shadow-2xl" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />SCHEDULE FREE TEST PATCH</Link>
           </Button>
         </div>

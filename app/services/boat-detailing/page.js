@@ -110,13 +110,13 @@ export default function BoatDetailing() {
             Many people consider their boat a beloved family member.<br className="hidden sm:block" /> Give it the best care with Spruce Detailing's expert marine services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50">
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-6 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50">
               <a href="tel:+17209712020" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 BOOK NOW
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-10 py-7 text-lg font-bold">
+            <Button size="lg" variant="outline" className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-10 py-6 text-lg font-bold">
               GET A FREE QUOTE
             </Button>
           </div>
@@ -257,7 +257,7 @@ export default function BoatDetailing() {
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">
             Our boat detailers perform thorough waxing and cleaning beyond a regular wash.<br className="hidden sm:block" /> Ready for a pristine, brand-new-looking boat?
           </p>
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-7 text-lg font-bold shadow-2xl">
+          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-6 text-lg font-bold shadow-2xl">
             <a href="tel:+17209712020" className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
               GET YOUR FREE QUOTE

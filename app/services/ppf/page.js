@@ -127,7 +127,7 @@ export default function Membership() {
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>JOIN THE SPRUCE<br className="hidden sm:block" /> SHIELD CLUB TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Save 30% on maintenance for the lifetime of your vehicle</p>
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-7 text-lg font-bold" asChild>
+          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />GET STARTED</Link>
           </Button>
         </div>

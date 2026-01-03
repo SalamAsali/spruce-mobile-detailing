@@ -89,7 +89,7 @@ export default function MotorcycleDetailing() {
             Expert detailing for motorcycles and bikes.<br className="hidden sm:block" /> Specialized care for chrome, paint, leather, and all surfaces.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-7 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50">
+            <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-6 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50">
               <a href="tel:+17209712020" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 GET FREE QUOTE
@@ -215,7 +215,7 @@ export default function MotorcycleDetailing() {
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">
             Professional motorcycle detailing with heat-resistant coatings.<br className="hidden sm:block" /> Mobile service across South Denver Metro.
           </p>
-          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-7 text-lg font-bold shadow-2xl">
+          <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-12 py-6 text-lg font-bold shadow-2xl">
             <a href="tel:+17209712020" className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
               CALL (720) 971-2020
