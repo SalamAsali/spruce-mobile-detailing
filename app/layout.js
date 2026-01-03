@@ -1,10 +1,15 @@
-import { Inter } from 'next/font/google'
+import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import FloatingCallButton from '@/components/FloatingCallButton'
 
 const inter = Inter({ subsets: ['latin'] })
+const oswald = Oswald({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-oswald'
+})
 
 export const metadata = {
   title: 'Spruce Mobile Detailing | Premium Auto Detailing South Denver Metro',
