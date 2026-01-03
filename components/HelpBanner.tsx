@@ -51,8 +51,8 @@ export default function HelpBanner() {
   const [activeIntent, setActiveIntent] = useState<IntentKey | null>(null);
 
   // ✅ Update these for Spruce
-  const PHONE = "+1-800-555-0134"; // display
-  const PHONE_TEL = "+18005550134"; // tel:
+  const PHONE = "(720) 971-2020"; // display
+  const PHONE_TEL = "+17209712020"; // tel:
 
   const CTAS: Record<IntentKey, CtaItem[]> = useMemo(
     () => ({
@@ -99,7 +99,7 @@ export default function HelpBanner() {
           aria-controls="headerRow chipsMobile chipsDesktop intentCtas"
           title={collapsed ? "Expand" : "Collapse"}
           onClick={() => setCollapsed((v) => !v)}
-          className="inline-flex transition xl:top-22 xl:right-8 w-7 h-7 border absolute top-2 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
+          className="inline-flex transition xl:top-20 xl:right-8 w-7 h-7 border absolute top-2 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
         >
           {collapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
           <span className="sr-only">{collapsed ? "Expand banner" : "Collapse banner"}</span>
@@ -176,15 +176,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         <div
@@ -226,15 +226,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         {!collapsed && (
@@ -267,7 +267,6 @@ export default function HelpBanner() {
                       key={`${activeIntent}-${item.href}-${item.text}`}
                       href={item.href}
                       className={pillClasses(item.variant)}
-                      role="button"
                       onClick={(e) => {
                         if (isAnchor) {
                           e.preventDefault();
