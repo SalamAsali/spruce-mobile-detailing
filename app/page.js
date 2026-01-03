@@ -342,12 +342,12 @@ export default function Home() {
       {/* Process Section - Vertical Timeline with Scroll Animation */}
       <section className="py-24 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="text-center mb-16 md:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               HOW OUR MOBILE DETAILING WORKS
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
-            <p className="text-gray-400 text-xl max-w-2xl mx-auto">
+            <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4 md:mb-6"></div>
+            <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
               Three simple steps to a pristine vehicle
             </p>
           </div>
