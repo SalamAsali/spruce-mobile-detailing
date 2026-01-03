@@ -487,24 +487,25 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="grayscale-[30%] contrast-110"
+          aria-label="Service area map showing Castle Rock to Denver Metro corridor"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none"></div>
         
         {/* Service Area Overlay */}
-        <div className="absolute bottom-8 left-8 bg-gradient-to-r from-black/90 to-black/70 backdrop-blur-sm rounded-2xl p-6 border border-[#D4AF37]/30 max-w-md">
-          <h3 className="text-xl font-black text-white mb-3 flex items-center gap-2" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
-            <div className="w-8 h-8 bg-gradient-to-br from-[#1B9B8A] to-[#158F7E] rounded-lg flex items-center justify-center">
+        <div className="absolute bottom-8 left-8 bg-gradient-to-r from-black/90 to-black/70 backdrop-blur-sm rounded-2xl p-6 border border-brand-gold/30 max-w-md">
+          <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <div className="w-8 h-8 bg-gradient-to-br from-brand-teal to-brand-teal-dark rounded-lg flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               </svg>
             </div>
-            SOUTH DENVER METRO
+            Mobile Detailing Near You
           </h3>
-          <p className="text-gray-300 text-sm mb-2">
-            Lakewood • Denver • Aurora • Centennial • Castle Rock
+          <p className="text-gray-300 text-base mb-2">
+            Serving the entire corridor from Castle Rock to Denver Metro including:
           </p>
-          <p className="text-[#D4AF37] text-xs font-semibold">
-            + All cities in between • Mobile service
+          <p className="text-brand-teal text-sm font-semibold">
+            Lakewood • Denver • Aurora • Centennial • Lone Tree • Parker • Highlands Ranch & All Cities In Between
           </p>
         </div>
       </section>
