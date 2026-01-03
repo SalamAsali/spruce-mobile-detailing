@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${oswald.variable}`}>
         <div className="overflow-x-hidden">
           <Navigation />
           <main>{children}</main>
