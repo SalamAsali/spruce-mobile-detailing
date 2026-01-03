@@ -44,7 +44,7 @@ export default function Packages() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/90 to-black"></div>
         </div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>SERVICE<br className="hidden sm:block" /> PACKAGES</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>SERVICE<br className="hidden sm:block" /> PACKAGES</h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">Choose the perfect package for your vehicle.<br className="hidden sm:block" /> From basic detailing to complete restoration.</p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Packages() {
                       <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 mb-4 group-hover:scale-110 transition-transform">
                         <Icon className="w-10 h-10 text-[#D4AF37]" />
                       </div>
-                      <h3 className="text-2xl font-black mb-2 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{pkg.name}</h3>
+                      <h3 className="text-2xl font-black mb-2 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{pkg.name}</h3>
                       <div className="text-3xl font-black text-[#D4AF37] mb-2">{pkg.price}</div>
                       <p className="text-gray-400 text-sm">{pkg.description}</p>
                     </div>
@@ -91,7 +91,7 @@ export default function Packages() {
           </div>
 
           <div className="mt-16 bg-gradient-to-r from-[#D4AF37]/20 via-[#1B9B8A]/10 to-[#D4AF37]/20 border-2 border-[#D4AF37]/30 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-black text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>CUSTOM PACKAGES AVAILABLE</h3>
+            <h3 className="text-2xl font-black text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>CUSTOM PACKAGES AVAILABLE</h3>
             <p className="text-gray-300 text-lg mb-6">Need something specific? We create custom packages tailored to your vehicle's needs and your budget.</p>
             <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-10 py-6 font-bold" asChild>
               <Link href="/contact">REQUEST CUSTOM QUOTE</Link>
@@ -102,7 +102,7 @@ export default function Packages() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y-2 border-[#1B9B8A]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>READY TO GET STARTED?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>READY TO GET STARTED?</h2>
           <p className="text-gray-300 text-xl mb-10">Contact us today to discuss the right package for your vehicle</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL (720) 971-2020</a>

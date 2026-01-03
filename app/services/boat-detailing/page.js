@@ -103,7 +103,7 @@ export default function BoatDetailing() {
         </div>
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             BOAT DETAILING DENVER
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -127,7 +127,7 @@ export default function BoatDetailing() {
       <section className="py-20 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
               OUR BOAT DETAILING SERVICES
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
@@ -147,7 +147,7 @@ export default function BoatDetailing() {
                         <Icon className="w-7 h-7 text-[#1B9B8A]" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{service.title}</h3>
+                        <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{service.title}</h3>
                         <p className="text-gray-400 leading-relaxed">{service.description}</p>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ export default function BoatDetailing() {
           <div className="mt-12 bg-gradient-to-r from-[#D4AF37]/20 via-[#1B9B8A]/10 to-[#D4AF37]/20 border-2 border-[#D4AF37]/30 rounded-2xl p-8 text-center">
             <div className="inline-flex items-center gap-2 mb-4">
               <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
-              <h3 className="text-2xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>BOAT RESTORATION SERVICES</h3>
+              <h3 className="text-2xl font-black text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>BOAT RESTORATION SERVICES</h3>
               <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
             </div>
             <p className="text-gray-300 text-lg mb-6 max-w-3xl mx-auto">
@@ -177,7 +177,7 @@ export default function BoatDetailing() {
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             WHY CHOOSE US FOR BOAT DETAILING?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -189,7 +189,7 @@ export default function BoatDetailing() {
                     <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 mb-6 group-hover:scale-110 transition-transform">
                       <Icon className="w-10 h-10 text-[#1B9B8A]" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{benefit.title}</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{benefit.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
                   </CardContent>
                 </Card>
@@ -202,7 +202,7 @@ export default function BoatDetailing() {
       {/* Process Section */}
       <section className="py-20 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             HOW OUR BOAT DETAILING WORKS
           </h2>
           <div className="relative">
@@ -212,13 +212,13 @@ export default function BoatDetailing() {
                 <div key={index} className="relative">
                   <div className="flex justify-center mb-6">
                     <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F4E5A1] rounded-full flex items-center justify-center z-10 shadow-2xl">
-                      <span className="text-black font-black text-3xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      <span className="text-black font-black text-3xl" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
                         {item.step}
                       </span>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl p-8 hover:border-[#1B9B8A] transition-all text-center">
-                    <h3 className="text-xl font-black mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{item.title}</h3>
+                    <h3 className="text-xl font-black mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{item.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{item.description}</p>
                   </div>
                 </div>
@@ -231,7 +231,7 @@ export default function BoatDetailing() {
       {/* FAQ Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             FREQUENTLY ASKED<br className="sm:hidden" /> QUESTIONS
           </h2>
           <div className="space-y-6">
@@ -251,7 +251,7 @@ export default function BoatDetailing() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             GIVE YOUR BOAT THE CARE<br className="hidden sm:block" /> IT DESERVES IN DENVER
           </h2>
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">

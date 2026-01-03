@@ -67,7 +67,7 @@ export default function Restoration() {
               <span className="text-[#D4AF37] text-sm font-semibold tracking-wider">MOST REQUESTED SERVICE</span>
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
             VEHICLE RESTORATION
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -88,7 +88,7 @@ export default function Restoration() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>RESTORATION SERVICES</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>RESTORATION SERVICES</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
             <p className="text-gray-400 text-xl max-w-3xl mx-auto">Complete restoration solutions for all vehicle types</p>
           </div>
@@ -104,7 +104,7 @@ export default function Restoration() {
                         <Icon className="w-7 h-7 text-[#D4AF37]" />
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{service.title}</h3>
+                        <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{service.title}</h3>
                         <p className="text-gray-400 leading-relaxed">{service.description}</p>
                       </div>
                     </div>
@@ -123,7 +123,7 @@ export default function Restoration() {
           </div>
 
           <div className="mt-12 bg-gradient-to-r from-[#D4AF37]/20 via-[#1B9B8A]/10 to-[#D4AF37]/20 border-2 border-[#D4AF37]/30 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-black text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>🌟 FREE MEMBERSHIP WITH RESTORATION 🌟</h3>
+            <h3 className="text-2xl font-black text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>🌟 FREE MEMBERSHIP WITH RESTORATION 🌟</h3>
             <p className="text-gray-300 text-lg mb-4">All restoration customers receive <span className="text-[#D4AF37] font-bold">FREE LIFETIME MEMBERSHIP</span> to Spruce Shield Club</p>
             <p className="text-gray-400">30% off all maintenance • Priority booking • Free annual inspection</p>
           </div>
@@ -132,7 +132,7 @@ export default function Restoration() {
 
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl font-black text-center mb-16 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>HOW IT WORKS</h2>
+          <h2 className="text-4xl font-black text-center mb-16 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>HOW IT WORKS</h2>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-800 hidden md:block"></div>
             <div className="space-y-32">
@@ -151,7 +151,7 @@ export default function Restoration() {
                             <Icon className="w-7 h-7 text-black" />
                           </div>
                           <div className="inline-block bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black text-xs font-bold px-3 py-1 rounded-full mb-4">STEP {item.step}</div>
-                          <h3 className="text-2xl font-black mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>{item.title}</h3>
+                          <h3 className="text-2xl font-black mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{item.title}</h3>
                           <p className="text-gray-400 leading-relaxed text-lg">{item.description}</p>
                         </div>
                       </div>
@@ -166,7 +166,7 @@ export default function Restoration() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#D4AF37]/20 via-[#0A0A0A] to-[#1B9B8A]/10 border-y-2 border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>READY TO RESTORE<br className="hidden sm:block" /> YOUR VEHICLE?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>READY TO RESTORE<br className="hidden sm:block" /> YOUR VEHICLE?</h2>
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">Get a free test patch and see the transformation yourself.<br className="hidden sm:block" /> Custom quotes for every project.</p>
           <Button size="lg" className="bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1] text-black px-12 py-6 text-lg font-bold shadow-2xl" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />SCHEDULE FREE TEST PATCH</Link>
