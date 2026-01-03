@@ -196,12 +196,10 @@ export default function Navigation() {
       <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b-2 border-[#D4AF37]/30">
         <div className="flex items-center justify-between px-4 h-16">
           <Link href="/" onClick={() => setIsOpen(false)}>
-            <Image 
-              src="/logo.png" 
-              alt="Spruce" 
-              width={50} 
-              height={50}
-              className="object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]"
+            <img 
+              src="https://customer-assets.emergentagent.com/job_d65b521f-106d-4ea6-ab42-030731ea7e91/artifacts/3oscqssl_Spruce%20Logo%20Different%20Designs.png"
+              alt="Spruce Mobile Detailing" 
+              className="h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]"
             />
           </Link>
           
