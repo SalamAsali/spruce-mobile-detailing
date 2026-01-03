@@ -3,7 +3,7 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import FloatingWidgets from '@/components/FloatingWidgets'
-import HelpBanner from '@/components/HelpBanner'
+import HelpBannerClientWrapper from '@/components/HelpBannerClientWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({ 
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${oswald.variable}`}>
         <div className="overflow-x-hidden">
           <Navigation />
-          <HelpBanner />
+          <HelpBannerClientWrapper />
           <main>{children}</main>
           <Footer />
           <FloatingWidgets />

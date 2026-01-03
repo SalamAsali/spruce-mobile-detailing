@@ -99,7 +99,7 @@ export default function HelpBanner() {
           aria-controls="headerRow chipsMobile chipsDesktop intentCtas"
           title={collapsed ? "Expand" : "Collapse"}
           onClick={() => setCollapsed((v) => !v)}
-          className="inline-flex transition xl:top-22 xl:right-8 w-7 h-7 border absolute top-2 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
+          className="inline-flex transition xl:top-20 xl:right-8 w-7 h-7 border absolute top-2 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
         >
           {collapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
           <span className="sr-only">{collapsed ? "Expand banner" : "Collapse banner"}</span>
