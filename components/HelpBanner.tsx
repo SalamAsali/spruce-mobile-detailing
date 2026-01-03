@@ -267,7 +267,6 @@ export default function HelpBanner() {
                       key={`${activeIntent}-${item.href}-${item.text}`}
                       href={item.href}
                       className={pillClasses(item.variant)}
-                      role="button"
                       onClick={(e) => {
                         if (isAnchor) {
                           e.preventDefault();
