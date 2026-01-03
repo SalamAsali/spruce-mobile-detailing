@@ -218,7 +218,7 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-5xl mx-auto px-4" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>
               FROM OUR MOBILE DETAILING TEAM TO YOUR GARAGE
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4 md:mb-6"></div>
