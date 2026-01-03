@@ -25,7 +25,7 @@ function FAQItem({ faq, index }) {
               Q
             </span>
           </div>
-          <h3 className={`text-lg md:text-xl font-bold transition-colors leading-[1.4] ${isOpen ? 'text-[#D4AF37]' : 'text-white group-hover:text-[#1B9B8A]'}`} style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h3 className={`text-lg md:text-xl font-bold transition-colors leading-[1.4] ${isOpen ? 'text-[#D4AF37]' : 'text-white group-hover:text-[#1B9B8A]'}`} style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             {faq.question}
           </h3>
         </div>
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center max-w-5xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             MOBILE DETAILING
           </h1>
           
@@ -223,7 +223,7 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-5xl mx-auto px-4" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-5xl mx-auto px-4" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               FROM OUR MOBILE DETAILING TEAM TO YOUR GARAGE
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4 md:mb-6"></div>
@@ -258,7 +258,7 @@ export default function Home() {
                   </div>
                   
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-black mb-3 text-white tracking-wide group-hover:text-[#1B9B8A] transition-colors" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+                    <h3 className="text-xl font-black mb-3 text-white tracking-wide group-hover:text-[#1B9B8A] transition-colors" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                       {service.title}
                     </h3>
                     <p className="text-gray-400 mb-6 leading-relaxed text-sm">{service.description}</p>
@@ -286,7 +286,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
             <div className="px-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                 ALL YOU NEED TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-brand-gold-light">KNOW</span>
               </h2>
               <p className="text-gray-400 mb-6 md:mb-8 leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
@@ -312,7 +312,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               OUR CORE BENEFITS
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto"></div>
@@ -327,7 +327,7 @@ export default function Home() {
                     <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                       <Icon className="w-10 h-10 text-[#1B9B8A]" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-4 text-white tracking-wide" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+                    <h3 className="text-2xl font-bold mb-4 text-white tracking-wide" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                       {feature.title}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
@@ -348,7 +348,7 @@ export default function Home() {
       <section className="py-24 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               HOW OUR MOBILE DETAILING WORKS
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4 md:mb-6"></div>
@@ -388,7 +388,7 @@ export default function Home() {
                             STEP {item.step}
                           </div>
                           
-                          <h3 className="text-2xl font-black mb-4 text-white tracking-wide leading-[1.3]" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+                          <h3 className="text-2xl font-black mb-4 text-white tracking-wide leading-[1.3]" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                             {item.title}
                           </h3>
                           <p className="text-gray-400 leading-relaxed text-lg">{item.description}</p>
@@ -412,7 +412,7 @@ export default function Home() {
       <section className="py-24 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-3xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               FREQUENTLY ASKED QUESTIONS
             </h2>
             <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto"></div>
@@ -442,7 +442,7 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               EXPERIENCE PREMIUM MOBILE DETAILING
             </h2>
             
@@ -493,7 +493,7 @@ export default function Home() {
         
         {/* Service Area Overlay */}
         <div className="absolute bottom-8 left-8 bg-gradient-to-r from-black/90 to-black/70 backdrop-blur-sm rounded-2xl p-6 border border-brand-gold/30 max-w-md">
-          <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h3 className="text-2xl font-bold text-white mb-3 flex items-center gap-2" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             <div className="w-8 h-8 bg-gradient-to-br from-brand-teal to-brand-teal-dark rounded-lg flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

@@ -60,7 +60,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             GET IN TOUCH
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -81,7 +81,7 @@ export default function Contact() {
                     <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${item.color} mb-6 group-hover:scale-110 transition-transform shadow-xl`}>
                       <Icon className="w-10 h-10 text-black" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>{item.title}</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>{item.title}</h3>
                     <a href={item.action} className="text-[#D4AF37] text-xl font-semibold mb-2 block hover:text-[#F4E5A1] transition-colors">
                       {item.details}
                     </a>
@@ -97,7 +97,7 @@ export default function Contact() {
             <Card className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-[#D4AF37]/30">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+                  <h2 className="text-3xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                     REQUEST A FREE QUOTE
                   </h2>
                   <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto"></div>
@@ -213,7 +213,7 @@ export default function Contact() {
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               WE SERVE SOUTH<br className="sm:hidden" /> DENVER METRO
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
@@ -240,7 +240,7 @@ export default function Contact() {
           <Card className="bg-gradient-to-r from-[#D4AF37]/10 to-[#1B9B8A]/10 border-2 border-[#D4AF37]/30">
             <CardContent className="p-8 text-center">
               <Clock className="w-12 h-12 text-[#D4AF37] mx-auto mb-4" />
-              <h3 className="text-2xl font-black mb-3 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+              <h3 className="text-2xl font-black mb-3 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                 BUSINESS HOURS
               </h3>
               <div className="text-gray-300 text-lg space-y-2">

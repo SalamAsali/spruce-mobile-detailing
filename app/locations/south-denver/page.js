@@ -39,7 +39,7 @@ export default function LocationPage() {
               <span className="text-[#1B9B8A] text-sm font-semibold tracking-wider">LOCAL MOBILE DETAILING</span>
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             DETAILING SERVICES IN South Denver
           </h1>
           <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed px-4">
@@ -55,7 +55,7 @@ export default function LocationPage() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#1B9B8A]/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+            <h2 className="text-3xl md:text-4xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
               OUR SERVICES IN South Denver
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
@@ -69,7 +69,7 @@ export default function LocationPage() {
                     <div className="w-16 h-16 mx-auto bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                       <Icon className="w-8 h-8 text-[#1B9B8A]" />
                     </div>
-                    <h3 className="text-base font-bold text-white mb-4" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>{service.name}</h3>
+                    <h3 className="text-base font-bold text-white mb-4" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>{service.name}</h3>
                     <Button asChild variant="outline" size="sm" className="w-full border-[#1B9B8A] text-[#1B9B8A] hover:bg-[#1B9B8A] hover:text-white">
                       <Link href={service.href}>LEARN MORE</Link>
                     </Button>
@@ -85,7 +85,7 @@ export default function LocationPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+              <h2 className="text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
                 WHY CHOOSE SPRUCE IN South Denver?
               </h2>
               <p className="text-gray-300 text-lg mb-8 leading-relaxed">
@@ -114,7 +114,7 @@ export default function LocationPage() {
           <div className="bg-gradient-to-r from-[#D4AF37]/20 via-[#1B9B8A]/10 to-[#D4AF37]/20 border-2 border-[#D4AF37]/30 rounded-2xl p-8 text-center">
             <div className="inline-flex items-center gap-2 mb-4">
               <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
-              <h3 className="text-2xl font-black text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>SERVING South Denver & SURROUNDING AREAS</h3>
+              <h3 className="text-2xl font-black text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>SERVING South Denver & SURROUNDING AREAS</h3>
               <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
             </div>
             <p className="text-gray-300 text-lg mb-6">

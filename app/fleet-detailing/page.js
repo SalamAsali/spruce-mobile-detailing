@@ -69,7 +69,7 @@ export default function FleetDetailing() {
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-5xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-5xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             Professional Fleet Cleaning for Commercial Vehicles
           </h1>
           <p className="text-gray-300 text-base sm:text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
@@ -99,7 +99,7 @@ export default function FleetDetailing() {
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-brand-teal/20 to-brand-gold/20 mb-4 group-hover:scale-110 transition-transform">
                       <Icon className="w-8 h-8 text-brand-teal" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>{prop.title}</h3>
+                    <h3 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>{prop.title}</h3>
                     <p className="text-gray-400 text-sm leading-relaxed">{prop.description}</p>
                   </CardContent>
                 </Card>
@@ -114,7 +114,7 @@ export default function FleetDetailing() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>Fleet Detailing Services</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>Fleet Detailing Services</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto"></div>
           </div>
           
@@ -129,7 +129,7 @@ export default function FleetDetailing() {
                         <Icon className="w-6 h-6 text-brand-gold" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>{service.title}</h3>
+                        <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>{service.title}</h3>
                         <p className="text-gray-400 text-sm">{service.description}</p>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export default function FleetDetailing() {
       <section className="py-16 md:py-20 px-4 bg-[#0A0A0A] relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-teal/30 to-transparent"></div>
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>Our Fleet Cleaning Process</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>Our Fleet Cleaning Process</h2>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-800 hidden md:block"></div>
             <div className="space-y-24 md:space-y-32">
@@ -164,7 +164,7 @@ export default function FleetDetailing() {
                             <Icon className="w-7 h-7 text-black" />
                           </div>
                           <div className="inline-block bg-gradient-to-r from-brand-teal to-brand-teal-dark text-white text-xs font-bold px-3 py-1 rounded-full mb-4">STEP {item.step}</div>
-                          <h3 className="text-xl md:text-2xl font-bold mb-4 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>{item.title}</h3>
+                          <h3 className="text-xl md:text-2xl font-bold mb-4 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>{item.title}</h3>
                           <p className="text-gray-400 leading-relaxed">{item.description}</p>
                         </div>
                       </div>
@@ -180,7 +180,7 @@ export default function FleetDetailing() {
       {/* Comparison Table */}
       <section className="py-16 md:py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>Why Fleet Detailing Beats Standard Car Washes</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif' }}>Why Fleet Detailing Beats Standard Car Washes</h2>
           <div className="overflow-x-auto">
             <table className="w-full border-2 border-gray-800 rounded-2xl overflow-hidden">
               <thead className="bg-gradient-to-r from-gray-900 to-gray-800">
@@ -207,7 +207,7 @@ export default function FleetDetailing() {
       {/* CTA */}
       <section className="py-16 md:py-20 px-4 bg-gradient-to-br from-brand-teal/20 via-[#0A0A0A] to-brand-gold/10 border-y-2 border-brand-gold/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>
             Ready to streamline your fleet maintenance?
           </h2>
           <p className="text-gray-300 text-lg mb-10 max-w-3xl mx-auto">Professional fleet detailing with flexible scheduling and volume pricing</p>

@@ -59,7 +59,7 @@ export default function HorizontalServiceGallery() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
       
       <div className="container mx-auto mb-8 px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-4xl mx-auto text-center" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-4xl mx-auto text-center" style={{ fontFamily: 'var(--font-oswald), Cinzel, sans-serif' }}>
           Our Services
         </h2>
       </div>
@@ -124,7 +124,7 @@ export default function HorizontalServiceGallery() {
                   )}
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif' }}>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-brand-gold transition-colors" style={{ fontFamily: 'var(--font-oswald), Cinzel, sans-serif' }}>
                   {service.title}
                 </h3>
                 <p className="text-gray-300 text-sm md:text-base mb-6">

@@ -41,7 +41,7 @@ export default function CeramicCoating() {
               <span className="text-[#1B9B8A] text-sm font-semibold tracking-wider">CERTIFIED COATING PROFESSIONALS</span>
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>CERAMIC<br className="hidden sm:block" /> COATING</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>CERAMIC<br className="hidden sm:block" /> COATING</h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">Professional nano-technology protection for all vehicles.<br className="hidden sm:block" /> System X & Glidecoat certified installers.</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-10 py-6 text-lg font-bold" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />GET FREE QUOTE</Link>
@@ -52,7 +52,7 @@ export default function CeramicCoating() {
       <section className="py-20 px-4 bg-[#0A0A0A] relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#1B9B8A]/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>CERAMIC COATING BENEFITS</h2>
+          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>CERAMIC COATING BENEFITS</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon
@@ -62,7 +62,7 @@ export default function CeramicCoating() {
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-[#1B9B8A]/20 to-[#D4AF37]/20 mb-4 group-hover:scale-110 transition-transform">
                       <Icon className="w-8 h-8 text-[#1B9B8A]" />
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>{benefit.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>{benefit.title}</h3>
                     <p className="text-gray-400 text-sm">{benefit.description}</p>
                   </CardContent>
                 </Card>
@@ -74,12 +74,12 @@ export default function CeramicCoating() {
 
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>OUR PRODUCTS</h2>
+          <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>OUR PRODUCTS</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {products.map((product, index) => (
               <Card key={index} className="bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-[#D4AF37]/50">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>{product.name}</h3>
+                  <h3 className="text-2xl font-black mb-4 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>{product.name}</h3>
                   <p className="text-gray-300 mb-6">{product.description}</p>
                   <div className="space-y-2">
                     {product.features.map((feature, fIdx) => (
@@ -105,7 +105,7 @@ export default function CeramicCoating() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y-2 border-[#1B9B8A]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>GET CERAMIC COATING PROTECTION TODAY</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-cinzel), Cinzel, serif', textWrap: 'balance' }}>GET CERAMIC COATING PROTECTION TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Warranty-backed ceramic coating from certified professionals</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL (720) 971-2020</a>
