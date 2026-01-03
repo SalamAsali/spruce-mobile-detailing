@@ -51,8 +51,8 @@ export default function HelpBanner() {
   const [activeIntent, setActiveIntent] = useState<IntentKey | null>(null);
 
   // ✅ Update these for Spruce
-  const PHONE = "+1-800-555-0134"; // display
-  const PHONE_TEL = "+18005550134"; // tel:
+  const PHONE = "(720) 971-2020"; // display
+  const PHONE_TEL = "+17209712020"; // tel:
 
   const CTAS: Record<IntentKey, CtaItem[]> = useMemo(
     () => ({
