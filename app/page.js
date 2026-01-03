@@ -345,7 +345,7 @@ export default function Home() {
       <BeforeAfter />
 
       {/* Process Section - Vertical Timeline with Scroll Animation */}
-      <section className="py-24 px-4 bg-[#0A0A0A]">
+      <section id="booking" className="py-24 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-16 md:mb-20">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>
@@ -435,7 +435,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y border-[#D4AF37]/20">
+      <section id="quote" className="py-24 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center relative">
           {/* Decorative Elements */}
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-[#1B9B8A]/10 rounded-full blur-3xl"></div>

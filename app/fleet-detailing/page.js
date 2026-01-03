@@ -110,6 +110,7 @@ export default function FleetDetailing() {
       </section>
 
       {/* Services Grid */}
+      <div id="fleet"></div>
       <section id="services" className="py-16 md:py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A] relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
