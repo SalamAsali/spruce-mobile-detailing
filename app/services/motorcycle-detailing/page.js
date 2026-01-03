@@ -83,7 +83,7 @@ export default function MotorcycleDetailing() {
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            MOTORCYCLE<br className="hidden sm:block" /> DETAILING
+            MOTORCYCLE DETAILING
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Expert detailing for motorcycles and bikes.<br className="hidden sm:block" /> Specialized care for chrome, paint, leather, and all surfaces.
@@ -103,7 +103,7 @@ export default function MotorcycleDetailing() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              MOTORCYCLE DETAILING<br className="hidden sm:block" /> SERVICES
+              MOTORCYCLE DETAILING SERVICES
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
           </div>

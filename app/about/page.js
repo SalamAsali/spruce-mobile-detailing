@@ -80,8 +80,8 @@ export default function About() {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            ABOUT SPRUCE<br className="hidden sm:block" /> MOBILE DETAILING
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            ABOUT SPRUCE MOBILE DETAILING
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Colorado's premier mobile detailing, restoration, and protection specialists.<br className="hidden sm:block" /> Certified professionals serving South Denver Metro.

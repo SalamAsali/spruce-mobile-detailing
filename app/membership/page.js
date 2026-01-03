@@ -57,7 +57,7 @@ export default function Membership() {
             <span className="text-[#D4AF37] text-lg font-black tracking-wider" style={{ fontFamily: 'Montserrat' }}>EXCLUSIVE MEMBERSHIP</span>
             <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>THE SPRUCE<br className="hidden sm:block" /> SHIELD CLUB</h1>
+          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>THE SPRUCE SHIELD CLUB</h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">Never pay full price for a wash again.<br className="hidden sm:block" /> FREE lifetime membership with ceramic coating or restoration services.</p>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function Membership() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#D4AF37]/20 via-[#0A0A0A] to-[#1B9B8A]/10 border-y-2 border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>JOIN THE SPRUCE<br className="hidden sm:block" /> SHIELD CLUB TODAY</h2>
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>JOIN THE SPRUCE SHIELD CLUB TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Save 30% on maintenance for the lifetime of your vehicle</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />GET STARTED</Link>

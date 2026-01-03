@@ -105,7 +105,7 @@ export default function CeramicCoating() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y-2 border-[#1B9B8A]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>GET CERAMIC COATING<br className="hidden sm:block" /> PROTECTION TODAY</h2>
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>GET CERAMIC COATING PROTECTION TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Warranty-backed ceramic coating from certified professionals</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <a href="tel:+17209712020"><Phone className="w-5 h-5 mr-2" />CALL (720) 971-2020</a>

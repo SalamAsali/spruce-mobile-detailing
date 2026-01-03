@@ -68,7 +68,7 @@ export default function Restoration() {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            VEHICLE<br className="hidden sm:block" /> RESTORATION
+            VEHICLE RESTORATION
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Transform faded, oxidized vehicles back to showroom condition.<br className="hidden sm:block" /> Professional restoration from Castle Rock to Denver Metro.

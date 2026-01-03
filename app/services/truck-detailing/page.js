@@ -83,7 +83,7 @@ export default function TruckDetailing() {
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            TRUCK DETAILING<br className="hidden sm:block" /> SOUTH DENVER
+            TRUCK DETAILING SOUTH DENVER
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Heavy-duty detailing for work trucks and pickups.<br className="hidden sm:block" /> Professional cleaning and protection built for vehicles that work hard.
@@ -103,7 +103,7 @@ export default function TruckDetailing() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              TRUCK DETAILING<br className="hidden sm:block" /> SERVICES
+              TRUCK DETAILING SERVICES
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
           </div>
@@ -210,7 +210,7 @@ export default function TruckDetailing() {
       <section className="py-20 px-4 bg-gradient-to-br from-[#1B9B8A]/20 via-[#0A0A0A] to-[#D4AF37]/10 border-y border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            READY FOR PROFESSIONAL<br className="hidden sm:block" /> TRUCK DETAILING?
+            READY FOR PROFESSIONAL TRUCK DETAILING?
           </h2>
           <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto">
             Heavy-duty cleaning and protection for work trucks.<br className="hidden sm:block" /> Mobile service across South Denver Metro.

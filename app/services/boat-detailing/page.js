@@ -104,7 +104,7 @@ export default function BoatDetailing() {
         
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            BOAT DETAILING<br className="hidden sm:block" /> DENVER
+            BOAT DETAILING DENVER
           </h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Many people consider their boat a beloved family member.<br className="hidden sm:block" /> Give it the best care with Spruce Detailing's expert marine services.
@@ -128,7 +128,7 @@ export default function BoatDetailing() {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              OUR BOAT DETAILING<br className="hidden sm:block" /> SERVICES
+              OUR BOAT DETAILING SERVICES
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
@@ -178,7 +178,7 @@ export default function BoatDetailing() {
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            WHY CHOOSE US FOR<br className="sm:hidden" /> BOAT DETAILING?
+            WHY CHOOSE US FOR BOAT DETAILING?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
@@ -203,7 +203,7 @@ export default function BoatDetailing() {
       <section className="py-20 px-4 bg-[#0A0A0A]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-black text-center mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            HOW OUR BOAT<br className="sm:hidden" /> DETAILING WORKS
+            HOW OUR BOAT DETAILING WORKS
           </h2>
           <div className="relative">
             <div className="hidden md:block absolute left-0 right-0 top-20 h-1 bg-gradient-to-r from-[#1B9B8A] via-[#D4AF37] to-[#1B9B8A]"></div>
