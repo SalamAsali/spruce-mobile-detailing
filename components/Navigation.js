@@ -15,20 +15,21 @@ export default function Navigation() {
     {
       title: 'Detailing Services',
       items: [
-        { name: 'Car Detailing', href: '/services/car-detailing', icon: Car, color: 'text-[#1B9B8A]' },
-        { name: 'RV Detailing', href: '/services/rv-detailing', icon: Truck, color: 'text-[#1B9B8A]' },
-        { name: 'Truck Detailing', href: '/services/truck-detailing', icon: Truck, color: 'text-[#1B9B8A]' },
-        { name: 'Motorcycle Detailing', href: '/services/motorcycle-detailing', icon: Bike, color: 'text-[#1B9B8A]' },
-        { name: 'Boat Detailing', href: '/services/boat-detailing', icon: Ship, color: 'text-[#1B9B8A]' },
+        { name: 'Car Detailing', href: '/services/car-detailing', icon: Car, color: 'text-brand-teal' },
+        { name: 'RV Detailing', href: '/services/rv-detailing', icon: Truck, color: 'text-brand-teal' },
+        { name: 'Truck Detailing', href: '/services/truck-detailing', icon: Truck, color: 'text-brand-teal' },
+        { name: 'Motorcycle Detailing', href: '/services/motorcycle-detailing', icon: Bike, color: 'text-brand-teal' },
+        { name: 'Boat Detailing', href: '/services/boat-detailing', icon: Ship, color: 'text-brand-teal' },
+        { name: 'Fleet Detailing', href: '/fleet-detailing', icon: Users, color: 'text-brand-teal', badge: 'B2B' },
       ]
     },
     {
       title: 'Premium Services',
       items: [
-        { name: 'Restoration', href: '/services/restoration', icon: Wrench, color: 'text-[#D4AF37]', badge: 'Popular' },
-        { name: 'Ceramic Coating', href: '/services/ceramic-coating', icon: Shield, color: 'text-[#D4AF37]' },
-        { name: 'Paint Protection Film', href: '/services/ppf', icon: Shield, color: 'text-[#D4AF37]' },
-        { name: 'Detailing Packages', href: '/services/packages', icon: Sparkles, color: 'text-[#D4AF37]' },
+        { name: 'Restoration', href: '/services/restoration', icon: Wrench, color: 'text-brand-gold', badge: 'Popular' },
+        { name: 'Ceramic Coating', href: '/services/ceramic-coating', icon: Shield, color: 'text-brand-gold' },
+        { name: 'Paint Protection Film', href: '/services/ppf', icon: Shield, color: 'text-brand-gold' },
+        { name: 'Detailing Packages', href: '/services/packages', icon: Sparkles, color: 'text-brand-gold' },
       ]
     }
   ]
