@@ -2,6 +2,7 @@ import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import FloatingWidgets from '@/components/FloatingWidgets'
 
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({ 
