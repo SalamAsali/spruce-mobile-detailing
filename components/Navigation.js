@@ -53,13 +53,13 @@ export default function Navigation() {
           <div className="flex justify-between items-center h-24">
             <Link href="/" className="flex items-center gap-4 relative group">
               <div className="absolute inset-0 bg-white/30 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Image 
-                src="/logo.png" 
-                alt="Spruce Mobile Detailing" 
-                width={100} 
-                height={100}
-                className="object-contain relative z-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
-              />
+              <div className="relative z-10">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_d65b521f-106d-4ea6-ab42-030731ea7e91/artifacts/3oscqssl_Spruce%20Logo%20Different%20Designs.png"
+                  alt="Spruce Mobile Detailing - RV | BOAT | AUTO | AIRCRAFT" 
+                  className="h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                />
+              </div>
             </Link>
 
             <div className="flex items-center gap-8">
