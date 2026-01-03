@@ -168,16 +168,16 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.1] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <div className="container mx-auto px-4 relative z-10 text-center max-w-5xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             MOBILE DETAILING
           </h1>
           
-          <p className="text-[#D4AF37] text-lg md:text-2xl mb-8 md:mb-10 tracking-wide font-light max-w-4xl mx-auto leading-relaxed px-4">
-            Professional Auto Detailing from Castle Rock to Denver Metro<br className="hidden sm:block" /> & Surrounding Areas - Done At Your Convenience
+          <p className="text-brand-gold text-base sm:text-lg md:text-xl mb-8 tracking-wide font-light max-w-3xl mx-auto leading-relaxed">
+            Professional Auto Detailing from Castle Rock to Denver Metro & Surrounding Areas - Done At Your Convenience
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
             <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] hover:from-[#158F7E] hover:to-[#1B9B8A] text-white px-10 py-6 text-lg font-bold shadow-2xl shadow-[#1B9B8A]/50 transition-all duration-300 hover:scale-105" asChild>
               <Link href="/contact" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
