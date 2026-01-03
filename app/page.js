@@ -437,11 +437,11 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl"></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               EXPERIENCE PREMIUM MOBILE DETAILING
             </h2>
             
-            <p className="text-gray-300 text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed">
               Let Spruce Detailing bring professional automotive care<br className="hidden sm:block" /> right to your location from Castle Rock to Denver Metro & surrounding areas.
             </p>
 
