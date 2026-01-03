@@ -153,7 +153,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] via-[#0F1419] to-[#0A0A0A] overflow-x-hidden">
       {/* Hero Section - Video Background */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-0" aria-label="Hero section with detailing video background">
         {/* Video Background */}
         <div className="absolute inset-0">
           <video 
