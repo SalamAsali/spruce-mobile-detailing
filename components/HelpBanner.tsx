@@ -176,15 +176,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         <div
@@ -226,15 +226,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         {!collapsed && (
