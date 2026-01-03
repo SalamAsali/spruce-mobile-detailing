@@ -50,9 +50,12 @@ export default function HelpBanner() {
   const [collapsed, setCollapsed] = useState(false);
   const [activeIntent, setActiveIntent] = useState<IntentKey | null>(null);
 
-  // ✅ Update these for Spruce
-  const PHONE = "+1-800-555-0134"; // display
-  const PHONE_TEL = "+18005550134"; // tel:
+  // Use NEXT_PUBLIC_PHONE if available; otherwise fallback to temporary phone.
+  const PHONE_FALLBACK = "+1-800-555-0134";
+  const rawPhone =
+    (typeof process !== "undefined" && process.env && process.env.NEXT_PUBLIC_PHONE) || PHONE_FALLBACK;
+  const PHONE = rawPhone;
+  const PHONE_TEL = rawPhone.replace(/[^+0-9]/g, "");
 
   const CTAS: Record<IntentKey, CtaItem[]> = useMemo(
     () => ({
