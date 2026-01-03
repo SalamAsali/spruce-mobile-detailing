@@ -103,12 +103,7 @@ export default function HelpBanner() {
         </button>
 
         {!collapsed && (
-          <div id="topSpacer" className="flex gap-3 items-start text-xs rounded-xl">
-            <div className="flex-shrink-0 mt-0.5" />
-          </div>
-        )}
-
-        <div id="headerRow" className="flex gap-4 pb-3 items-start justify-between text-xs rounded-xl">
+          <div id="headerRow" className="flex gap-4 pb-3 items-start justify-between text-xs rounded-xl">
           <div className="flex items-center gap-3 text-xs rounded-xl">
             <div className="grid place-items-center w-10 h-10 ring-1 rounded-xl bg-white/10 ring-white/10">
               <Sparkles className="w-5 h-5" />
@@ -173,15 +168,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         <div
@@ -223,15 +218,15 @@ export default function HelpBanner() {
             Fleet Detailing
           </button>
 
-          <a
-            href={`tel:${PHONE_TEL}`}
+          <button
+            type="button"
             aria-pressed={activeIntent === "emergency"}
             onClick={() => setActiveIntent("emergency")}
             className={intentPillBase(activeIntent === "emergency")}
           >
             <AlarmClockOff className="w-3.5 h-3.5 shrink-0" />
             Emergency Detail
-          </a>
+          </button>
         </div>
 
         {!collapsed && (
