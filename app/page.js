@@ -218,11 +218,11 @@ export default function Home() {
         
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-6xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              FROM OUR MOBILE DETAILING TEAM<br className="hidden md:block" /> TO YOUR GARAGE
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-4xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              FROM OUR MOBILE DETAILING TEAM TO YOUR GARAGE
             </h2>
-            <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-4 md:mb-6"></div>
-            <p className="text-gray-400 text-base md:text-xl max-w-3xl mx-auto leading-relaxed px-2">
+            <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4 md:mb-6"></div>
+            <p className="text-gray-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
               We offer swift vehicle tire care and exceptional detailing services
             </p>
           </div>
