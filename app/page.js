@@ -175,7 +175,7 @@ export default function Home() {
           </h1>
           
           <p className="text-brand-gold text-base sm:text-lg md:text-xl mb-8 tracking-wide font-light max-w-3xl mx-auto leading-relaxed">
-            Professional Auto Detailing from Castle Rock to Denver Metro & Surrounding Areas - Done At Your Convenience
+            Professional Auto Detailing, Servicing from Denver Metro to Castle Rock
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
