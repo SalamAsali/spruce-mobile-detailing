@@ -57,7 +57,7 @@ export default function Membership() {
             <span className="text-[#D4AF37] text-lg font-black tracking-wider" style={{ fontFamily: 'Montserrat' }}>EXCLUSIVE MEMBERSHIP</span>
             <Star className="w-6 h-6 text-[#D4AF37] fill-[#D4AF37]" />
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>THE SPRUCE SHIELD CLUB</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 text-white tracking-tight leading-[1.1]" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>THE SPRUCE SHIELD CLUB</h1>
           <p className="text-gray-300 text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">Never pay full price for a wash again.<br className="hidden sm:block" /> FREE lifetime membership with ceramic coating or restoration services.</p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function Membership() {
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>MEMBERSHIP BENEFITS</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>MEMBERSHIP BENEFITS</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto"></div>
           </div>
 
@@ -79,7 +79,7 @@ export default function Membership() {
                     <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-[#D4AF37]/20 to-[#1B9B8A]/20 mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all">
                       <Icon className="w-10 h-10 text-[#D4AF37]" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>{benefit.title}</h3>
+                    <h3 className="text-2xl font-bold mb-3 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>{benefit.title}</h3>
                     <p className="text-gray-400 leading-relaxed">{benefit.description}</p>
                   </CardContent>
                 </Card>
@@ -92,7 +92,7 @@ export default function Membership() {
       <section className="py-20 px-4 bg-gradient-to-b from-[#0F1419] to-[#0A0A0A]">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>HOW TO JOIN</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>HOW TO JOIN</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-6"></div>
             <p className="text-gray-400 text-xl">Membership is automatically included with these premium services:</p>
           </div>
@@ -125,7 +125,7 @@ export default function Membership() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-[#D4AF37]/20 via-[#0A0A0A] to-[#1B9B8A]/10 border-y-2 border-[#D4AF37]/20">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'Montserrat, sans-serif', textWrap: 'balance' }}>JOIN THE SPRUCE SHIELD CLUB TODAY</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white" style={{ fontFamily: 'var(--font-oswald), Oswald, sans-serif', textWrap: 'balance' }}>JOIN THE SPRUCE SHIELD CLUB TODAY</h2>
           <p className="text-gray-300 text-xl mb-10">Save 30% on maintenance for the lifetime of your vehicle</p>
           <Button size="lg" className="bg-gradient-to-r from-[#1B9B8A] to-[#158F7E] text-white px-12 py-6 text-lg font-bold" asChild>
             <Link href="/contact"><Phone className="w-5 h-5 mr-2" />GET STARTED</Link>
