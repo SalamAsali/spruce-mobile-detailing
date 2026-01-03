@@ -281,11 +281,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
             </div>
             <div className="px-2">
-              <h2 className="text-3xl md:text-5xl font-black mb-4 md:mb-6 text-white tracking-tight leading-[1.2]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                ALL YOU NEED TO<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-[#F4E5A1]">KNOW</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white tracking-tight leading-tight max-w-3xl mx-auto" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                ALL YOU NEED TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-brand-gold-light">KNOW</span>
               </h2>
-              <p className="text-gray-400 mb-6 md:mb-8 leading-relaxed text-base md:text-lg">
+              <p className="text-gray-400 mb-6 md:mb-8 leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
                 Expert in offering first-rate detailing services for your automobiles. At Spruce Mobile Detailing from Castle Rock to Denver Metro, your car receives quality care from qualified professionals.
               </p>
               <div className="space-y-3 md:space-y-4">
