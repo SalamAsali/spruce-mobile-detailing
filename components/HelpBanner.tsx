@@ -52,8 +52,7 @@ export default function HelpBanner() {
 
   // Use NEXT_PUBLIC_PHONE if available; otherwise fallback to temporary phone.
   const PHONE_FALLBACK = "+1-800-555-0134";
-  const rawPhone =
-    (typeof process !== "undefined" && process.env && process.env.NEXT_PUBLIC_PHONE) || PHONE_FALLBACK;
+  const rawPhone = process.env.NEXT_PUBLIC_PHONE || PHONE_FALLBACK;
   const PHONE = rawPhone;
   const PHONE_TEL = rawPhone.replace(/[^+0-9]/g, "");
 
