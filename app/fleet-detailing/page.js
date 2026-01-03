@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Phone, CheckCircle, MapPin, Clock, DollarSign, Shield, Truck, Users, Sparkles, Calendar } from 'lucide-react'
+import { Phone, CheckCircle, MapPin, Clock, DollarSign, Shield, Truck, Users, Sparkles, Calendar, Car } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
