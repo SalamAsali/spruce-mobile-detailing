@@ -212,8 +212,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-16 md:py-24 px-4 bg-[#0A0A0A] relative">
+      {/* Horizontal Service Gallery - NEW */}
+      <HorizontalServiceGallery />
+
+      {/* Services Section - Old Grid (Can be removed or kept) */}
+      <section id="services" className="py-16 md:py-24 px-4 bg-[#0A0A0A] relative hidden">
+        {/* Hidden for now - replaced by horizontal gallery */}
         {/* Decorative Top Border */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent"></div>
         
