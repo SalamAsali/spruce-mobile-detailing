@@ -50,31 +50,28 @@ export default function HelpBanner() {
   const [collapsed, setCollapsed] = useState(false);
   const [activeIntent, setActiveIntent] = useState<IntentKey | null>(null);
 
-  // ✅ Update these for Spruce
-  const PHONE = "+1-800-555-0134"; // display
-  const PHONE_TEL = "+18005550134"; // tel:
+  // ✅ Use environment variable with fallback
+  const PHONE = process.env.NEXT_PUBLIC_PHONE || "+1-800-555-0134"; // display
+  const PHONE_TEL = PHONE.replace(/[^0-9+]/g, ""); // tel: format (remove dashes, spaces, etc.)
 
   const CTAS: Record<IntentKey, CtaItem[]> = useMemo(
     () => ({
       quote: [
-        { href: "#quote", text: "Jump to quote form", icon: <ArrowDown className="w-4 h-4" />, variant: "ghost" },
-        { href: "/request-quote", text: "Request Quote page", icon: <FileText className="w-4 h-4" />, variant: "ghost" },
+        { href: "/contact", text: "Contact Us for Quote", icon: <FileText className="w-4 h-4" />, variant: "ghost" },
         { href: `tel:${PHONE_TEL}`, text: "Call for a Quote", icon: <Phone className="w-4 h-4" />, variant: "primary" },
       ],
       schedule: [
-        { href: "#booking", text: "Jump to booking", icon: <ArrowDown className="w-4 h-4" />, variant: "ghost" },
-        { href: "/schedule", text: "Scheduling page", icon: <Calendar className="w-4 h-4" />, variant: "ghost" },
+        { href: "/contact", text: "Contact to Schedule", icon: <Calendar className="w-4 h-4" />, variant: "ghost" },
         { href: `tel:${PHONE_TEL}`, text: "Call to Schedule", icon: <Phone className="w-4 h-4" />, variant: "primary" },
       ],
       fleet: [
-        { href: "#fleet", text: "Fleet service details", icon: <ArrowDown className="w-4 h-4" />, variant: "ghost" },
         { href: "/fleet-detailing", text: "Fleet Detailing page", icon: <Truck className="w-4 h-4" />, variant: "ghost" },
         { href: `tel:${PHONE_TEL}`, text: "Call Fleet Team", icon: <Phone className="w-4 h-4" />, variant: "primary" },
       ],
       emergency: [
         { href: `tel:${PHONE_TEL}`, text: "Call Emergency Detail", icon: <AlarmClockOff className="w-4 h-4" />, variant: "primary" },
-        { href: "#quote", text: "Request urgent callback", icon: <MessageSquare className="w-4 h-4" />, variant: "ghost" },
-        { href: "/services", text: "See all services", icon: <ArrowRight className="w-4 h-4" />, variant: "ghost" },
+        { href: "/contact", text: "Request urgent callback", icon: <MessageSquare className="w-4 h-4" />, variant: "ghost" },
+        { href: "/services/packages", text: "See all packages", icon: <ArrowRight className="w-4 h-4" />, variant: "ghost" },
       ],
     }),
     [PHONE_TEL]
