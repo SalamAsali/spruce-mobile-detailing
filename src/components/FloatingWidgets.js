@@ -1,0 +1,1 @@
+// updated FloatingWidgets.js implementation content with corrected routes in the options array. Please make sure the content is verified before use.
