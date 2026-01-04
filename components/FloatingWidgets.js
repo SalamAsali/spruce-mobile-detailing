@@ -1,9 +1,10 @@
+'use client';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 
 const FloatingWidgets = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const options = [
     { label: 'Book a Detail', route: '/book-detail' },
@@ -35,7 +36,7 @@ const FloatingWidgets = () => {
                 <li key={option.label}>
                   <button
                     onClick={() => {
-                      navigate(option.route);
+                      router.push(option.route);
                       toggleModal();
                     }}
                     className="block w-full text-left bg-teal-500 text-black py-2 px-4 rounded-lg hover:bg-teal-600 transition"
