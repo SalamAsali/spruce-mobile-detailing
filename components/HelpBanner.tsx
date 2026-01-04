@@ -25,6 +25,11 @@ type CtaItem = {
   variant: "primary" | "ghost";
 };
 
+interface HelpBannerProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
 function pillClasses(variant: CtaItem["variant"]) {
   if (variant === "primary") {
     return "inline-flex items-center gap-2 h-9 px-3 rounded-md bg-white text-slate-900 hover:bg-white/90 text-[13px] font-medium font-sans";
@@ -46,7 +51,7 @@ function scrollToId(href: string) {
   return true;
 }
 
-export default function HelpBanner() {
+export default function HelpBanner({ isOpen, onClose }: HelpBannerProps) {
   const [collapsed, setCollapsed] = useState(false);
   const [activeIntent, setActiveIntent] = useState<IntentKey | null>(null);
 
@@ -84,28 +89,44 @@ export default function HelpBanner() {
 
   const currentCtas = activeIntent ? CTAS[activeIntent] : null;
 
+  // Don't render if not open
+  if (!isOpen) return null;
+
   return (
-    <div
-      id="helpBanner"
-      className="xl:py-4 bg-gradient-to-r border-b pt-4 pb-4 text-xs rounded-xl text-white from-slate-900 to-slate-800 border-slate-700"
-    >
-      <div
-        id="bannerContainer"
-        className={`sm:px-6 lg:px-8 max-w-7xl mr-auto ml-auto relative text-xs rounded-xl ${
-          collapsed ? "py-2" : "pt-3 pr-4 pb-3 pl-4 sm:py-4"
-        }`}
-      >
-        <button
-          id="bannerToggle"
-          aria-expanded={!collapsed}
-          aria-controls="headerRow chipsMobile chipsDesktop intentCtas"
-          title={collapsed ? "Expand" : "Collapse"}
-          onClick={() => setCollapsed((v) => !v)}
-          className="inline-flex transition xl:top-22 xl:right-8 w-7 h-7 border absolute top-2 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
+    <div className="fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-300">
+      <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+        <div
+          id="helpBanner"
+          className="bg-gradient-to-r border pt-4 pb-4 text-xs rounded-2xl text-white from-slate-900 to-slate-800 border-slate-700 shadow-2xl"
         >
-          {collapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
-          <span className="sr-only">{collapsed ? "Expand banner" : "Collapse banner"}</span>
-        </button>
+          <div
+            id="bannerContainer"
+            className={`sm:px-6 lg:px-8 max-w-7xl mr-auto ml-auto relative text-xs rounded-xl ${
+              collapsed ? "py-2" : "pt-3 pr-4 pb-3 pl-4 sm:py-4"
+            }`}
+          >
+            {/* Close button */}
+            <button
+              onClick={onClose}
+              className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition z-10"
+              aria-label="Close"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <button
+              id="bannerToggle"
+              aria-expanded={!collapsed}
+              aria-controls="headerRow chipsMobile chipsDesktop intentCtas"
+              title={collapsed ? "Expand" : "Collapse"}
+              onClick={() => setCollapsed((v) => !v)}
+              className="inline-flex transition w-7 h-7 border absolute top-12 right-3 items-center justify-center text-xs rounded-xl hover:bg-white/10 text-white border-white/20"
+            >
+              {collapsed ? <ChevronDown className="w-4 h-4" /> : <ChevronUp className="w-4 h-4" />}
+              <span className="sr-only">{collapsed ? "Expand banner" : "Collapse banner"}</span>
+            </button>
 
         {!collapsed && (
           <div id="topSpacer" className="flex gap-3 items-start text-xs rounded-xl">
@@ -286,6 +307,8 @@ export default function HelpBanner() {
             )}
           </div>
         )}
+      </div>
+    </div>
       </div>
     </div>
   );
