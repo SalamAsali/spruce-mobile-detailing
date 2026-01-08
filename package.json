@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@fontsource/inter": "^5.0.20",
+        "@fontsource/montserrat": "^5.0.20",
         "@fontsource/oswald": "^5.0.20",
         "@hookform/resolvers": "^5.1.1",
         "@radix-ui/react-accordion": "^1.2.11",

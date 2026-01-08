@@ -2,7 +2,10 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import FloatingCallButton from '@/components/FloatingCallButton'
+codex/view-all-errors-for-project-j8umda
+
 import HelpBannerClientWrapper from '@/components/HelpBannerClientWrapper'
+main
 
 export const metadata = {
   title: 'Spruce Mobile Detailing | Premium Auto Detailing South Denver Metro',
@@ -55,7 +58,6 @@ export default function RootLayout({ children }) {
       <body>
         <div className="overflow-x-hidden">
           <Navigation />
-          <HelpBannerClientWrapper />
           <main>{children}</main>
           <Footer />
           <FloatingCallButton />
