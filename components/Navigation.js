@@ -50,7 +50,7 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden lg:block fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px]">
+      <nav className="hidden lg:block fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-[1400px] font-nav">
         <div className="bg-black/95 backdrop-blur-md border-2 border-[#D4AF37]/40 rounded-full shadow-2xl shadow-[#D4AF37]/20 px-10 py-2">
           <div className="flex justify-between items-center h-24">
             <Link href="/" className="flex items-center gap-4 relative group">
@@ -195,7 +195,7 @@ export default function Navigation() {
       </nav>
 
       {/* Mobile Navigation */}
-      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b-2 border-[#D4AF37]/30">
+      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/98 backdrop-blur-md border-b-2 border-[#D4AF37]/30 font-nav">
         <div className="flex items-center justify-between px-4 h-16">
           <Link href="/" onClick={() => setIsOpen(false)}>
             <img 
