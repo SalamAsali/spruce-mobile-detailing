@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/oswald/400.css';
+@import '@fontsource/oswald/500.css';
+@import '@fontsource/oswald/600.css';
+@import '@fontsource/oswald/700.css';
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +13,8 @@
 
 @layer base {
   :root {
+    --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-oswald: 'Oswald', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     --background: 0 0% 4%;
     --foreground: 0 0% 100%;
     --card: 0 0% 8%;
@@ -36,12 +45,12 @@
   }
   body {
     @apply bg-[#0A0A0A] text-foreground;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: var(--font-sans);
     font-weight: 400;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply text-white;
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-oswald);
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
