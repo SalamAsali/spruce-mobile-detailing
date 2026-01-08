@@ -1,201 +1,131 @@
-/* Font sources (local, bundled) */
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
-@import '@fontsource/inter/700.css';
-@import '@fontsource/montserrat/400.css';
-@import '@fontsource/montserrat/600.css';
-@import '@fontsource/montserrat/700.css';
-@import '@fontsource/oswald/400.css';
-@import '@fontsource/oswald/500.css';
-@import '@fontsource/oswald/600.css';
-@import '@fontsource/oswald/700.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-nav: 'Montserrat', 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-oswald: 'Oswald', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 45 100% 51%;
-    --primary-foreground: 0 0% 0%;
-    --secondary: 170 60% 30%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 45 100% 51%;
-    --accent-foreground: 0 0% 0%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 45 100% 51%;
-    --radius: 0.5rem;
-    --teal-green: 170 60% 35%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-[#0A0A0A] text-foreground;
-    font-family: var(--font-sans);
-    font-weight: 400;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    @apply text-white;
-    font-family: var(--font-oswald);
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    text-wrap: balance;
-  }
-  p {
-    text-wrap: pretty;
-  }
-}
-
-/* Gold gradient text effect */
-.text-gold-gradient {
-  background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Teal Green - Brand Color */
-.bg-teal-green {
-  background-color: #1B9B8A;
-}
-
-.text-teal-green {
-  color: #1B9B8A;
-}
-
-.border-teal-green {
-  border-color: #1B9B8A;
-}
-
-.hover\:bg-teal-green:hover {
-  background-color: #158F7E;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0A0A0A;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #D4AF37;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #F4E5A1;
-}
-
-/* Before After Slider */
-.before-after-slider {
-  position: relative;
-  overflow: hidden;
-  cursor: ew-resize;
-  user-select: none;
-}
-
-.before-after-slider img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.before-after-slider .after-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-.before-after-slider .slider-handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #D4AF37;
-  cursor: ew-resize;
-  z-index: 10;
-}
-
-.before-after-slider .slider-handle::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background: #D4AF37;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-}
-
-.before-after-slider .slider-handle::after {
-  content: '⟷';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #0A0A0A;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Timeline Animation */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.timeline-item {
-  opacity: 0;
-  animation: slideIn 0.6s ease-out forwards;
-}
-
-.timeline-item:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.timeline-item:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.timeline-item:nth-child(3) {
-  animation-delay: 0.6s;
-}
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/app/globals.css b/app/globals.css
+index d3f6371f941d45ef9c060a503c55b9ce521b2e31..aea9b3e99e63e9a722401676e71443fc67854e09 100644
+--- a/app/globals.css
++++ b/app/globals.css
+@@ -1,72 +1,90 @@
+-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
++/* Font sources (local, bundled) */
++@import '@fontsource/inter/400.css';
++@import '@fontsource/inter/500.css';
++@import '@fontsource/inter/600.css';
++@import '@fontsource/inter/700.css';
++@import '@fontsource/montserrat/400.css';
++@import '@fontsource/montserrat/600.css';
++@import '@fontsource/montserrat/700.css';
++@import '@fontsource/oswald/400.css';
++@import '@fontsource/oswald/500.css';
++@import '@fontsource/oswald/600.css';
++@import '@fontsource/oswald/700.css';
+ 
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ @layer base {
+   :root {
++    --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
++    --font-nav: 'Montserrat', 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
++    --font-oswald: 'Oswald', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+     --background: 0 0% 4%;
+     --foreground: 0 0% 100%;
+     --card: 0 0% 8%;
+     --card-foreground: 0 0% 100%;
+     --popover: 0 0% 8%;
+     --popover-foreground: 0 0% 100%;
+     --primary: 45 100% 51%;
+     --primary-foreground: 0 0% 0%;
+     --secondary: 170 60% 30%;
+     --secondary-foreground: 0 0% 100%;
+     --muted: 0 0% 15%;
+     --muted-foreground: 0 0% 70%;
+     --accent: 45 100% 51%;
+     --accent-foreground: 0 0% 0%;
+     --destructive: 0 84.2% 60.2%;
+     --destructive-foreground: 0 0% 98%;
+     --border: 0 0% 20%;
+     --input: 0 0% 20%;
+     --ring: 45 100% 51%;
+     --radius: 0.5rem;
+     --teal-green: 170 60% 35%;
+   }
+ }
+ 
+ @layer base {
+   * {
+     @apply border-border;
+   }
+   body {
+     @apply bg-[#0A0A0A] text-foreground;
+-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
++    font-family: var(--font-sans);
+     font-weight: 400;
+   }
+   h1, h2, h3, h4, h5, h6 {
+     @apply text-white;
+-    font-family: 'Oswald', sans-serif;
++    font-family: var(--font-oswald);
+     font-weight: 700;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
++    text-wrap: balance;
++  }
++  p {
++    text-wrap: pretty;
+   }
+ }
+ 
+ /* Gold gradient text effect */
+ .text-gold-gradient {
+   background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+ }
+ 
+ /* Teal Green - Brand Color */
+ .bg-teal-green {
+   background-color: #1B9B8A;
+ }
+ 
+ .text-teal-green {
+   color: #1B9B8A;
+ }
+ 
+ .border-teal-green {
+   border-color: #1B9B8A;
+ }
+ 
+ .hover\:bg-teal-green:hover {
+@@ -158,26 +176,26 @@ html {
+   from {
+     opacity: 0;
+     transform: translateX(-50px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ 
+ .timeline-item {
+   opacity: 0;
+   animation: slideIn 0.6s ease-out forwards;
+ }
+ 
+ .timeline-item:nth-child(1) {
+   animation-delay: 0.2s;
+ }
+ 
+ .timeline-item:nth-child(2) {
+   animation-delay: 0.4s;
+ }
+ 
+ .timeline-item:nth-child(3) {
+   animation-delay: 0.6s;
+-}
+\ No newline at end of file
++}
+ 
+EOF
+)
