@@ -45,6 +45,7 @@ export default function Navigation() {
     { name: 'Parker', slug: 'parker' },
     { name: 'Castle Rock', slug: 'castle-rock' }
   ]
+  const navFont = { fontFamily: 'var(--font-nav)' }
 
   return (
     <>
@@ -64,16 +65,16 @@ export default function Navigation() {
             </Link>
 
             <div className="flex items-center gap-8">
-              <Link href="/" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Go to homepage">
+              <Link href="/" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={navFont} aria-label="Go to homepage">
                 HOME
               </Link>
 
-              <Link href="/about" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="About us page">
+              <Link href="/about" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={navFont} aria-label="About us page">
                 ABOUT US
               </Link>
 
               <div className="relative group" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Services menu" aria-expanded={servicesOpen}>
+                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={navFont} aria-label="Services menu" aria-expanded={servicesOpen}>
                   SERVICES
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                 </button>
@@ -83,7 +84,7 @@ export default function Navigation() {
                     <div className="grid grid-cols-2 gap-6">
                       {serviceCategories.map((category, catIndex) => (
                         <div key={catIndex} className="space-y-3">
-                          <h3 className={`text-xs font-bold tracking-wider mb-4 ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`} style={{ fontFamily: 'Montserrat' }}>
+                          <h3 className={`text-xs font-bold tracking-wider mb-4 ${catIndex === 0 ? 'text-[#1B9B8A]' : 'text-[#D4AF37]'}`} style={navFont}>
                             {category.title}
                           </h3>
                           <div className="space-y-2">
@@ -95,7 +96,7 @@ export default function Navigation() {
                                     <Icon className={`w-5 h-5 ${item.color}`} />
                                   </div>
                                   <div className="flex-1">
-                                    <span className="text-sm text-gray-300 group-hover:text-white transition-colors block" style={{ fontFamily: 'Montserrat' }}>
+                                    <span className="text-sm text-gray-300 group-hover:text-white transition-colors block" style={navFont}>
                                       {item.name}
                                     </span>
                                   </div>
@@ -118,7 +119,7 @@ export default function Navigation() {
                           <Star className="w-4 h-4 text-black" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <span className="text-xs font-bold text-white block truncate" style={{ fontFamily: 'Montserrat' }}>Spruce Shield Club</span>
+                          <span className="text-xs font-bold text-white block truncate" style={navFont}>Spruce Shield Club</span>
                           <span className="text-[10px] text-gray-400 block truncate">30% off all services</span>
                         </div>
                         <ChevronDown className="w-4 h-4 text-[#D4AF37] rotate-[-90deg] group-hover:translate-x-1 transition-transform flex-shrink-0" />
@@ -131,26 +132,26 @@ export default function Navigation() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
                         </div>
-                        <span className="text-[10px] font-bold text-white text-center" style={{ fontFamily: 'Montserrat' }}>Service Areas</span>
+                        <span className="text-[10px] font-bold text-white text-center" style={navFont}>Service Areas</span>
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <Link href="/membership" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Membership page">
+              <Link href="/membership" className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={navFont} aria-label="Membership page">
                 MEMBERSHIP
               </Link>
 
               <div className="relative group" onMouseEnter={() => setLocationsOpen(true)} onMouseLeave={() => setLocationsOpen(false)}>
-                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={{ fontFamily: 'Montserrat' }} aria-label="Service areas menu" aria-expanded={locationsOpen}>
+                <button className="text-gray-300 hover:text-[#D4AF37] text-sm font-semibold tracking-[0.12em] transition-all flex items-center gap-2 relative group px-4 py-2 rounded-full border border-transparent hover:border-[#D4AF37]/30 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" style={navFont} aria-label="Service areas menu" aria-expanded={locationsOpen}>
                   SERVICE AREAS
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${locationsOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                 </button>
                 
                 <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[500px] transition-all duration-300 ease-out z-50 ${locationsOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                   <div className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 border-2 border-gray-800 rounded-2xl shadow-2xl py-6 px-6">
-                    <h3 className="text-[#1B9B8A] text-xs font-bold tracking-wider mb-4" style={{ fontFamily: 'Montserrat' }}>
+                    <h3 className="text-[#1B9B8A] text-xs font-bold tracking-wider mb-4" style={navFont}>
                       WE SERVE SOUTH DENVER METRO
                     </h3>
                     <div className="grid grid-cols-3 gap-3">
@@ -166,7 +167,7 @@ export default function Navigation() {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
                           </div>
-                          <span className="text-xs text-gray-300 group-hover:text-white transition-colors" style={{ fontFamily: 'Montserrat' }}>
+                          <span className="text-xs text-gray-300 group-hover:text-white transition-colors" style={navFont}>
                             {location.name}
                           </span>
                         </Link>
@@ -182,7 +183,7 @@ export default function Navigation() {
                 </div>
               </div>
 
-              <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-sm font-bold tracking-[0.12em] shadow-lg border-2 border-[#1B9B8A] hover:border-[#158F7E] transition-all" style={{ fontFamily: 'Montserrat' }} asChild>
+              <Button className="bg-[#1B9B8A] hover:bg-[#158F7E] text-white px-6 py-6 text-sm font-bold tracking-[0.12em] shadow-lg border-2 border-[#1B9B8A] hover:border-[#158F7E] transition-all" style={navFont} asChild>
                 <Link href="/contact" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   CONTACT

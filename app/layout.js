@@ -1,16 +1,7 @@
-import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import FloatingWidgets from '@/components/FloatingWidgets'
-import HelpBannerClientWrapper from '@/components/HelpBannerClientWrapper'
-
-const inter = Inter({ subsets: ['latin'] })
-const oswald = Oswald({ 
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-oswald'
-})
+import FloatingCallButton from '@/components/FloatingCallButton'
 
 export const metadata = {
   title: 'Spruce Mobile Detailing | Premium Auto Detailing South Denver Metro',
@@ -60,13 +51,12 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${inter.className} ${oswald.variable}`}>
+      <body>
         <div className="overflow-x-hidden">
           <Navigation />
-          <HelpBannerClientWrapper />
           <main>{children}</main>
           <Footer />
-          <FloatingWidgets />
+          <FloatingCallButton />
         </div>
       </body>
     </html>
